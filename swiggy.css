@@ -1,0 +1,61 @@
+
+#sw-btn img{
+	border: none;
+	outline: none;
+	background: none;
+	margin-left: 100px;
+	transform: translateY(-10px);
+}
+#sw-btn img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	transition: 1s;
+}
+.nav-clr{
+	text-decoration: underline;
+	font-weight: 800;
+	color: black;
+	transform: translateX(-50px);
+}
+
+.nav-clr:hover {
+	text-decoration-color: orange;
+}
+
+.nav-clr a:hover{
+	color: orange !important;
+}
+.nav-clr1 a:hover{
+	color: orange !important;
+} 
+.label{
+	position: absolute !important;
+	color: orange !important;
+	font-size: 18px;
+	background-color: white !important;
+	transform: translate(-8px , -10px);
+}
+.arrow{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.food-list{
+	display: flex;
+	flex-direction: row;
+	margin-left: 250px;
+	position: relative;
+	margin-top: 30px;
+}
+.custom-height{
+	height: 100vh;
+}
+.row-img2{
+	z-index: -1;
+}
+.show-row1{
+	 left: 10px;
+}
+.show-row2{
+	 right: 10px;
+}

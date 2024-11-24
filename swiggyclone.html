@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Food Online From India's Best Food Delivery Services | Swiggy swiggy.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"href="swiggy.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid custom-height"style="background-color: #f7f7f5;margin: 0;padding: 0;">
+
+    <nav class="navbar navbar-default"style="background-color:white">
+    <div class="container-fluid">
+
+    <div class="navbar-header"style="margin-top: 20px;">
+      <button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+        <a class="navbar-brand" href="#"id="sw-btn">
+
+          <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"class="img-circle" alt="swiggy"width="100px"height="60px">
+            <ul class="nav navbar-nav navbar-right"style="margin-top: 20px;">
+              <li class="nav-clr"><a href="#"style="margin-right: 350px;">Other
+                 <span class="glyphicon glyphicon-menu-down"style="color: orange;"></span></a></li>
+            </ul>
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right"style="margin-top: 25px;">
+        <li class="nav-clr1"><a href="#"style="font-weight: 800;">
+            <i class="fa-solid fa-grip-lines"style="position: absolute;"></i>
+            <i class="fa-regular fa-square"></i>
+              Swiggy Corporate</a></li>
+
+            <li class="nav-clr1"><a href="#"style="font-weight: 800;">
+              <span class="glyphicon glyphicon-search"style="margin-right: 8px;"></span>Search</a></li>
+
+            <li class="nav-clr1"><a href="#"style="font-weight: 800;">
+              <i class="fa-brands fa-cloudsmith"></i>
+              Offers<span class="badge label">New</span></a></li>
+
+            <li class="nav-clr1"><a href="#"style="font-weight: 800;margin-left: 10px;">
+              <i class="fa-solid fa-life-ring"style="margin-right:5px"></i>Help</a></li>
+
+            <li class="nav-clr1"><a href="#"style="font-weight: 800;">
+            <span class="glyphicon glyphicon-user"style="margin-right: 5px;"></span>Sign In</a></li>
+
+            <li class="nav-clr1"><a href="#"style="font-weight: 800;">
+              <span class="glyphicon glyphicon-shopping-cart"style="margin-right: 5px;"></span>Cart</a></li>
+      </ul>
+    </div>
+</div>
+</nav>
+  
+  <div class="arrow">
+    <h3 style="margin-left: 180px;font-weight: 700;">What's on your mind?</h3>
+    <span class="show-row1"onclick="prevImage()"><i class="fa-regular fa-circle-left"style="font-size: 30px;margin-left: 950px;cursor: pointer;"></i></span>
+    <span class="show-row2"onclick="nextImage()"><i class="fa-regular fa-circle-right"style="font-size: 30px;margin-left: 30px;cursor: pointer;"></i></span>
+  </div>
+
+  <div style="display:flex;flex-direction: row;">
+  <div class="food-list active">
+    <img src="https://media.zoopindia.com/items-images/Veg_Standard_Thali.webp"alt="home-food"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;transform: skewX(10deg);border-radius: 10px;">
+
+    <img src="https://static.vecteezy.com/system/resources/previews/048/067/082/non_2x/biryani-dish-malabar-biryani-with-thalassery-chicken-isolated-illustration-on-a-transparent-background-png.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+
+    <img src="https://png.pngtree.com/png-vector/20241113/ourlarge/pngtree-indian-food-platter-png-image_14418150.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+
+    <img src="https://www.pngall.com/wp-content/uploads/12/Indian-Cuisine-PNG-File.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+
+    <img src="https://www.pngarts.com/files/3/Pizza-Transparent-Background-PNG.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+
+    <img src="https://img.pikbest.com/origin/09/17/45/925pIkbEsT7uF.png!sw800"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+
+    <img src="https://png.pngtree.com/png-vector/20240611/ourlarge/pngtree-hakka-noodles-chinese-png-image_12642670.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
+  </div>
+   
+    <div class="row-img2">
+    <img src="https://static.vecteezy.com/system/resources/previews/021/916/563/non_2x/gray-plate-with-cake-isolated-on-a-transparent-background-png.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 50px;">
+  </div>
+</div>
+
+<div style="display:flex;flex-direction: row;">
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 275px;margin-top: 5px;">
+    <span>Hoomely</span>
+      <span style="margin-left:13px">Food</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left:100px;margin-top: 5px;">
+    <span>Briyani</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 100px;margin-top: 5px;">
+    <span>South Indian</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 60px;margin-top: 5px;">
+    <span>North Indian</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 95px;margin-top: 5px;">
+    <span>Pizza's</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 105px;margin-top: 5px;">
+    <span>Burgers</span>
+</div>
+
+<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 110px;margin-top: 5px;">
+    <span>Chinese</span>
+</div>
+</div>
+
+</div>
+<script>
+  // Get all images and initialize the current image index
+  const images = document.querySelectorAll('.food-list img');
+  let currentIndex = 0;
+
+  // Function to show the next image
+  function nextImage() {
+    images[currentIndex].classList.remove('active'); // Hide the current image
+    currentIndex = (currentIndex + 1) % images.length; // Move to the next image (loop back to first)
+    images[currentIndex].classList.add('active'); // Show the next image
+  }
+
+  // Function to show the previous image
+  function prevImage() {
+    images[currentIndex].classList.remove('active'); // Hide the current image
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // Move to the previous image (loop back to last)
+    images[currentIndex].classList.add('active'); // Show the previous image
+  }
+</script>
+
+</body>
+</html>
