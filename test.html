@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 3 Carousel with Rows of Images</title>
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+        .carousel .item img {
+    max-height: 200px;
+    object-fit: cover;
+}
+.carousel .row {
+    margin-bottom: 10px;
+}
+.carousel-caption{
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 20px !important;
+    position: relative !important;
+    color: black !important;
+    font-size: 20px !important;
+    cursor: pointer;
+    width: 100% !important;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Carousel with Rows of Images</h2>
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 1">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;">Briyani</span>
+              </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 2">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;">Briyani</span>
+              </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <!-- Second Slide -->
+                <div class="item">
+                    <div class="row">
+                        
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 8">
+                        </div>
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 9">
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <img src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg" class="img-responsive" alt="Image 3">
+                            <div class="carousel-caption">
+                 <span style="margin-left:50px;margin-top: 8px;position:relative ;">juice</span>
+              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap 3 JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
