@@ -11,30 +11,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container-fluid custom-height"style="background-color: #f7f7f5;margin: 0;padding: 0;">
+<div class="container-fluid custom-height"style="background-color: white;margin: 0;padding: 0;">
 
-    <nav class="navbar navbar-default"style="background-color:white">
-    <div class="container-fluid">
+    <nav class="navbar navbar-default"style="background-color:white;">
 
-    <div class="navbar-header"style="margin-top: 20px;">
-      <button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+      <div class="container-fluid">
 
-        <a class="navbar-brand" href="#"id="sw-btn">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-          <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"class="img-circle" alt="swiggy"width="100px"height="60px">
-            <ul class="nav navbar-nav navbar-right"style="margin-top: 20px;">
-              <li class="nav-clr"><a href="#"style="margin-right: 350px;">Other
-                 <span class="glyphicon glyphicon-menu-down"style="color: orange;"></span></a></li>
-            </ul>
-        </a>
-    </div>
+          <a class="navbar-brand" href="#"id="sw-btn">
+
+              <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"class="img-circle" alt="swiggy"width="100px"height="50px">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li class="nav-clr"><a href="#">Other
+                     <span class="glyphicon glyphicon-menu-down"style="color: orange;"></span></a></li>
+                </ul>
+          </a>
+       </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right"style="margin-top: 25px;">
+      <ul class="nav navbar-nav navbar-right"style="margin-top: 5px;">
         <li class="nav-clr1"><a href="#"style="font-weight: 800;">
             <i class="fa-solid fa-grip-lines"style="position: absolute;"></i>
             <i class="fa-regular fa-square"></i>
@@ -60,85 +63,1471 @@
 </div>
 </nav>
   
-  <div class="arrow">
-    <h3 style="margin-left: 180px;font-weight: 700;">What's on your mind?</h3>
-    <span class="show-row1"onclick="prevImage()"><i class="fa-regular fa-circle-left"style="font-size: 30px;margin-left: 950px;cursor: pointer;"></i></span>
-    <span class="show-row2"onclick="nextImage()"><i class="fa-regular fa-circle-right"style="font-size: 30px;margin-left: 30px;cursor: pointer;"></i></span>
+<!-- <div class="arrow"> -->
+
+  
+    
+<!-- </div> -->
+
+<div class="container">
+<h3 class="whats-on">What's on your mind?</h3>
+  <div style="display:flex;flex-direction: row;"> 
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner"style="width: 1150px;height: 200px;">
+
+        <div class="item active">
+          <div class="row">
+            <div class="col-xs-2">
+                <img src="https://media.zoopindia.com/items-images/Veg_Standard_Thali.webp"class="img-responsive"alt="home-food"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);transform: skewX(10deg);border-radius: 10px;margin-left: 50px;">
+                 <div class="carousel-caption">
+                   <div style="display:flex;flex-direction: column;margin-left: 40px;">
+                      <span>Hoomely</span>
+                      <span>Food</span>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-xs-2">
+                <img src="https://static.vecteezy.com/system/resources/previews/048/067/082/non_2x/biryani-dish-malabar-biryani-with-thalassery-chicken-isolated-illustration-on-a-transparent-background-png.png"class="img-responsive"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                <div class="carousel-caption">
+                  <span style="margin-left:40px;margin-top: 8px;">Briyani</span>
+                </div>
+            </div>
+
+            <div class="col-xs-2">
+                <img src="https://png.pngtree.com/png-vector/20241113/ourlarge/pngtree-indian-food-platter-png-image_14418150.png"class="img-responsive"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                <div class="carousel-caption">
+                   <span style="margin-left:20px">South Indian</span>
+                </div>
+            </div>
+        
+
+            <div class="col-xs-2">
+                <img src="https://www.pngall.com/wp-content/uploads/12/Indian-Cuisine-PNG-File.png"class="img-responsive"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 70px;">
+                <div class="carousel-caption">
+                   <span style="margin-left:40px">North Indian</span>
+                 </div>
+            </div>
+
+            <div class="col-xs-2">
+                <img src="https://www.pngarts.com/files/3/Pizza-Transparent-Background-PNG.png"class="img-responsive"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 70px;">
+                <div class="carousel-caption">
+                  <span style="margin-left:60px">Pizza's</span>
+                </div>
+            </div>
+      
+            <div class="col-xs-2">
+                <img src="https://img.pikbest.com/origin/09/17/45/925pIkbEsT7uF.png!sw800"class="img-responsive"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 40px;">
+                <div class="carousel-caption">
+                    <span style="margin-left:20px">Burgers</span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+        <div class="item">
+          <div class="row">
+
+            <div class="col-xs-2">
+                <img class="img-responsive"src="https://png.pngtree.com/png-vector/20240611/ourlarge/pngtree-hakka-noodles-chinese-png-image_12642670.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 70px;">
+                <div class="carousel-caption">
+                    <span style="margin-left:50px">Chinese</span>
+               </div>
+            </div>
+
+              <div class="col-xs-2">
+                <img src="https://p.kindpng.com/picc/s/41-412371_8-chocolate-cake-top-view-hd-png-download.png"class="img-responsive"alt="cake"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 70px;">
+                <div class="carousel-caption">
+                   <span style="margin-left:60px">Cakes</span>
+                </div>
+              </div>
+
+              <div class="col-xs-2">
+                  <img src="https://png.pngtree.com/png-clipart/20231101/original/pngtree-vegetable-platter-png-image_13466962.png"class="img-responsive"alt="pure veg"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 70px;">
+                  <div class="carousel-caption">
+                     <span style="margin-left:60px">Pure Veg</span>
+                  </div>
+              </div>
+      
+              <div class="col-xs-2">
+                <img src="https://static.vecteezy.com/system/resources/previews/047/490/262/non_2x/tasty-spring-rolls-top-view-isolated-on-transparent-background-cut-out-or-clipping-path-png.png"class="img-responsive"alt="Rolls"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                <div class="carousel-caption">
+                   <span style="margin-left:50px">Rolls</span>
+                 </div>
+              </div>
+    
+                <div class="col-xs-2">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/041/496/small_2x/3d-render-of-strawberry-shake-glass-with-whipped-cream-dripping-chocolate-syrup-element-png.png"class="img-responsive"alt="Shakes"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                    <div class="carousel-caption">
+                       <span style="margin-left:40px">Shakes</span>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                   <img src="https://png.pngtree.com/png-vector/20240129/ourlarge/pngtree-top-view-vegan-mediterranean-pasta-png-image_11585767.png"class="img-responsive"alt="pasta"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                      <span style="margin-left:50px">Pasta</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+              <div class="row">
+
+                  <div class="col-xs-2">
+                    <img src="https://kreamz.in/wp-content/uploads/2024/07/truffle-pastry.webp"class="img-responsive"alt="Pastry"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                     <div class="carousel-caption">
+                        <span style="margin-left:50px">Pastry</span>
+                      </div>
+                </div>
+      
+                <div class="col-xs-2">
+                   <img class="img-responsive"src="https://img-cdn.krishijagran.com/81875/malabar-paratha.jpg"alt="parotta"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                     <span style="margin-left:40px">Parotta</span>
+                   </div>
+                </div>
+
+                <div class="col-xs-2">
+                   <img class="img-responsive" src="https://static.vecteezy.com/system/resources/thumbnails/037/799/109/small_2x/bowl-of-salad-in-black-bowl-top-view-isolated-on-transparent-background-png.png"alt="salad"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                     <span style="margin-left:40px">Salad</span>
+                   </div>
+                </div>
+
+                <div class="col-xs-2">
+                   <img class="img-responsive"src="https://rosepng.com/wp-content/uploads/2024/03/s11728_amul_ice_cream_isolated_on_white_background_-stylize__cda86404-1b08-4691-a0a8-80db3010cf5c_1-photoroom-png-photoroom_11zon.png"alt="ice cream"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                     <span style="margin-left:30px">Ice Cream</span>
+                   </div>
+                </div>
+
+                <div class="col-xs-2">
+                   <img class="img-responsive"src="https://static.vecteezy.com/system/resources/previews/048/422/114/non_2x/a-plate-with-all-kinds-of-spicy-and-soft-indian-snacks-on-a-white-bowl-top-view-isolated-on-a-transparent-background-free-png.png"alt="Snacks"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                     <span style="margin-left:50px">Bath</span>
+                   </div>
+                </div>
+
+                <div class="col-xs-2">
+                   <img class="img-responsive"src="https://static.vecteezy.com/system/resources/previews/036/497/912/non_2x/ai-generated-stir-fried-noodles-with-vibrant-vegetables-on-a-white-plate-on-transparent-background-free-png.png"alt="Noodles"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;margin-left: 50px;">
+                   <div class="carousel-caption">
+                     <span style="margin-left:40px">Noodles</span>
+                   </div>
+                </div>
+       </div>
+    </div>
   </div>
-
-  <div style="display:flex;flex-direction: row;">
-  <div class="food-list active">
-    <img src="https://media.zoopindia.com/items-images/Veg_Standard_Thali.webp"alt="home-food"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;transform: skewX(10deg);border-radius: 10px;">
-
-    <img src="https://static.vecteezy.com/system/resources/previews/048/067/082/non_2x/biryani-dish-malabar-biryani-with-thalassery-chicken-isolated-illustration-on-a-transparent-background-png.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-
-    <img src="https://png.pngtree.com/png-vector/20241113/ourlarge/pngtree-indian-food-platter-png-image_14418150.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-
-    <img src="https://www.pngall.com/wp-content/uploads/12/Indian-Cuisine-PNG-File.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-
-    <img src="https://www.pngarts.com/files/3/Pizza-Transparent-Background-PNG.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-
-    <img src="https://img.pikbest.com/origin/09/17/45/925pIkbEsT7uF.png!sw800"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-
-    <img src="https://png.pngtree.com/png-vector/20240611/ourlarge/pngtree-hakka-noodles-chinese-png-image_12642670.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 70px;">
-  </div>
-   
-    <div class="row-img2">
-    <img src="https://static.vecteezy.com/system/resources/previews/021/916/563/non_2x/gray-plate-with-cake-isolated-on-a-transparent-background-png.png"alt="briyani"width="100px"height="100px"style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);cursor: pointer;border-radius: 50px;margin-left: 50px;">
+  
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
   </div>
 </div>
-
-<div style="display:flex;flex-direction: row;">
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 275px;margin-top: 5px;">
-    <span>Hoomely</span>
-      <span style="margin-left:13px">Food</span>
 </div>
+<hr class="line1">
+  <div style="margin-left:170px;">
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left:100px;margin-top: 5px;">
-    <span>Briyani</span>
+      <div class="arrow" style="display:flex;flex-direction: row;">
+         <h3 style="font-weight: 700;margin-left: 30px;">Top restaurant chains in Chennai</h3>
+          <a class="left carousel-control box" style="margin-left: 900px;"href="#SecondCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control box"style="margin-right: 150px;" href="#SecondCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+
+       <div id="SecondCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators"style="transform: translate(-50px,50px);">
+            <li data-target="#SecondCarousel" data-slide-to="0" class="active"style="background-color: darkred;"></li>
+            <li data-target="#SecondCarousel" data-slide-to="1"style="background-color: darkred;"></li>
+            <li data-target="#SecondCarousel" data-slide-to="2"style="background-color: darkred;"></li>
+          </ol>
+
+      <div style="display:grid;flex-direction: row;">
+        <div class="carousel-inner">
+          <div class="item active">
+               <div class="row">
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/24/9ad6d286-99fa-452a-975c-c4e61077f7ee_401029.jpg"alt="shree mithai hotel" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Shree Mithai <br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.7</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Dessert, Street Food, Chaat, Sweets</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+                   <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/18/f9e48476-063a-450e-b078-3468d61ca116_712491.jpg"alt="pizza hut" width="250px"height="150px"style="border-radius: 15px;">
+                    <div style="margin-left: 15px;">
+                        <span style="font-size: 18px;font-weight: 800;">Pizza Hut <br>
+                            <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                            <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                            <span style="font-size:16px;font-weight: 600;">4.2</span>
+                            <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                            <span style="font-size:16px;margin-left: 8px;font-weight: 600;">40 - 45 mins</span><br>
+                            
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Pizza's</span><br>
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Guindy, Kathipara Bridge</span>
+                          </span>
+                    </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+                   <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/5581074b-5614-4098-992b-fd75caec15f4_17826.JPG"alt="KFC" width="250px"height="150px"style="border-radius: 15px;">
+                    <div style="margin-left: 15px;">
+                        <span style="font-size: 18px;font-weight: 800;">KFC <br>
+                            <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                            <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                            <span style="font-size:16px;font-weight: 600;">4.3</span>
+                            <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                            <span style="font-size:16px;margin-left: 8px;font-weight: 600;">20-25 mins</span><br>
+                            
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Burger, Fast Food, Rolls & Wraps</span><br>
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Kk Nagar</span>
+                        </span>
+                    </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+                   <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597"
+                   alt="Chinese" width="250px"height="150px"style="border-radius: 15px;">
+                    <div style="margin-left: 15px;">
+                        <span style="font-size: 18px;font-weight: 800;">Chinese Wok<br>
+                            <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                            <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                            <span style="font-size:16px;font-weight: 600;">4.3</span>
+                            <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                            <span style="font-size:16px;margin-left: 8px;font-weight: 600;">35-40 mins</span><br>
+                            
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Chinese, Asian, Tibetan, Desserts</span><br>
+                            <span style="font-size:16px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                        </span>
+                    </div>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="item">
+            <div class="row">
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/25/248229d4-20c8-4cab-8e39-dd3363c36445_10421.jpg"alt="shree mithai hotel" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Subway<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.1</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Salads, Snacks, Desserts, Beverages</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Kk Nagar</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5116a385bac0548e06c33c08350fbf11"alt="shree mithai hotel" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">The Belgian Waffle Co.<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Dessert, Waffle, Ice Cream</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">PHASE 1</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/662bb58f-7b46-40e3-938a-6ca094b2677a_518646.JPG"alt="Buger King" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Burger King <br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">40 - 45 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Bugers</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/24/7d8abed5-6108-4d46-8c36-95703513704b_862071.JPG"alt="Domino's" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Domino's <br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.1</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Pizza's, Italian, Pasta's, Desserts</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">UPDOWN</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="item">
+            <div class="row">
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/85ccae4e3576f9330af102c46ca85395"alt="Baskin Robbins - Ice Cream..." width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Subway<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Desserts</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/190d9de2-dd67-427f-9a11-3ece5f1739e0_23760.jpg"alt="McDonald's" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">McDonald's.<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Beverages, Dessert, Burgers, Cafe</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jwjvct05zukbsi8dadza"alt="Sangeetha Veg Restaurant" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Sangeetha Veg Restaurant<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.7</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">North Indian, South Indian</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Poonthottam Colony</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/4279f552-9336-4119-b636-88c860875520_862793.JPG"alt="Mughal Briyani" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 15px;">
+                    <span style="font-size: 18px;font-weight: 800;">Mughal Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:16px;margin-left: 8px;font-weight: 600;">20 - 30 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Briyani, Awadhi</span><br>
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Mosque Street</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
+</div><br>
+      <hr class="line1"style="transform: translateX(-100px);">
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 100px;margin-top: 5px;">
-    <span>South Indian</span>
-</div>
+        <div class="responsive" style="margin-left:180px;">
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 60px;margin-top: 5px;">
-    <span>North Indian</span>
-</div>
+            <div class="arrow" style="display:flex;flex-direction: row;">
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 95px;margin-top: 5px;">
-    <span>Pizza's</span>
-</div>
+                <h3 style="font-weight:600;font-size:20px">Restaurants with online food delivery in Chennai</h3>
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 105px;margin-top: 5px;">
-    <span>Burgers</span>
-</div>
+            </div>
+        
 
-<div style="display: flex;flex-direction: column;font-size: 18px;margin-left: 110px;margin-top: 5px;">
-    <span>Chinese</span>
-</div>
-</div>
+          <button type="button" class="btn btn-default"style="height: auto;width: 80px;border-radius: 50px;">Filter
+            <i class="fa-solid fa-sliders"></i>
+          </button>
 
-</div>
-<script>
-  // Get all images and initialize the current image index
-  const images = document.querySelectorAll('.food-list img');
-  let currentIndex = 0;
+          <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Sort By
+            <span class="caret"></span>
+          </button>
 
-  // Function to show the next image
-  function nextImage() {
-    images[currentIndex].classList.remove('active'); // Hide the current image
-    currentIndex = (currentIndex + 1) % images.length; // Move to the next image (loop back to first)
-    images[currentIndex].classList.add('active'); // Show the next image
-  }
+          <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Fast Delivery
+          </button>
 
-  // Function to show the previous image
-  function prevImage() {
-    images[currentIndex].classList.remove('active'); // Hide the current image
-    currentIndex = (currentIndex - 1 + images.length) % images.length; // Move to the previous image (loop back to last)
-    images[currentIndex].classList.add('active'); // Show the previous image
-  }
+          <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">New On Swiggy
+          </button>
+
+          <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Rating 4.0+
+          </button>
+
+          <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Pure Veg
+          </button>
+
+          <button type="button" class="btn btn-default"style="height: auto;width: 70px;border-radius: 50px;margin-left: 8px;">Offers
+          </button>
+
+          <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Rs.300-Rs.600
+          </button>
+
+          <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Less than Rs.300
+          </button>
+
+
+          <div id="showme"style="">
+          <nav class="navbar navbar-default">
+            
+                <div class="navbar-header">
+                    <button type="button" class="btn btn-default"style="height: auto;width: 80px;border-radius: 50px;">Filter
+                      <i class="fa-solid fa-sliders"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Sort By
+                      <span class="caret"></span>
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Fast Delivery
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">New On Swiggy
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Rating 4.0+
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 100px;border-radius: 50px;margin-left: 8px;">Pure Veg
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 70px;border-radius: 50px;margin-left: 8px;">Offers
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Rs.300-Rs.600
+                    </button>
+
+                    <button type="button" class="btn btn-default"style="height: auto;width: 130px;border-radius: 50px;margin-left: 8px;">Less than Rs.300
+                    </button>
+                </div>
+           
+          </nav>
+        </div>
+        
+<!-- <script type="text/javascript">
+  var lastScrollTop='500px';
+
+navbar = document.getElementById('showme');
+window.addEventListener('scroll',function(){
+
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if(scrollTop > lastScrollTop){
+
+navbar.style.top='-1200px';
+}
+else{
+  navbar.style.top='500px';
+}
+ 
+  lastScrollTop = scrollTop;
+  console.log();
+});
 </script>
+ -->
+      <div class="grouped"style="margin-top: 40px;display: flex;flex-direction: column;width: 1140px;">
+        <div class="row">
 
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/18/f9e48476-063a-450e-b078-3468d61ca116_712491.jpg"alt="Pizza Hut" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT
+                <i class="fa-solid fa-indian-rupee-sign"></i>189</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Pizza Hut<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.2</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Pizzas</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy Kathipara Bridge</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597"alt="Chinese Wok" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT
+                <i class="fa-solid fa-indian-rupee-sign"></i>149</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Chinese Wok<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Chinese, Asian, Tibetan, Desserts</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/25/b71df2d0-5865-4309-ab99-1fca139bf94a_958874.jpg"alt="Subway" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                50% OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 110px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>299</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Subway<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Salads, Dessert, Snacks,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Urban Square</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/5581074b-5614-4098-992b-fd75caec15f4_17826.JPG"alt="KFC" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 130px;">ITEMS AT
+                <i class="fa-solid fa-indian-rupee-sign"></i>89</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">KFC<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Burgers, Fast Food, Rools & Wraps</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Kk Nagar</span>
+                    </span>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/662bb58f-7b46-40e3-938a-6ca094b2677a_518646.JPG"alt="Buger King" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>59</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Buger King<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Burgers, American</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/83650e6ca1465c58063a70ad22be4f28"alt="Ambur Briyani" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                40% OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 90px">UPTO
+                  <i class="fa-solid fa-indian-rupee-sign"></i>80</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Ambur Star Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5116a385bac0548e06c33c08350fbf11"alt="The Belgian Waffle Co." width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                20% OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 90px">UPTO
+                  <i class="fa-solid fa-indian-rupee-sign"></i>50</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">The Belgian Waffle Co.<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Waffle, Dessert, Ice Cream</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">PHASE I</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/24/7d8abed5-6108-4d46-8c36-95703513704b_862071.JPG"alt="Domino's Pizza" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>125 OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 120px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1149</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Domino's Pizza<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.1</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Pizzas, Italian, Pastas, Desserts</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">UPTOWN</span>
+                    </span>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/3/31f65a94-91ac-49b1-888e-816d9aafdc0a_786402.jpg"alt="Geetham Veg Restaurant" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>75 OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 110px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>199</div>
+
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Geetham Veg Restaurant<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Beverages, Sweets, North Indian...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/85ccae4e3576f9330af102c46ca85395"alt="Baskin Robbins" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>160</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Baskin Robbins - Ice Cream...<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Dessert</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kwtzaac7zw3eskwulaj5"alt="SS Hyderabad Briyani" width="250px"height="150px"style="border-radius: 15px;">
+
+
+                <div style="margin-left:  8px">                          
+                      <span style="font-size: 15px;font-weight: 800;">SS Hyderabad Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Saidapet</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/4/3404c240-95a6-4e53-8459-51c77cd7db9d_641794.jpg"alt="Sharief Bhai Briyani" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>199</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Sharief Bhai Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.2</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani, Kababs, Mughlai, Arabia...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">T Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vvtdsuut3utwluvdsn28"alt="Andhra Gunpowder" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Andhra Gunpowder<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">30 - 35 mins</span><br>
+
+                        <span style="font-size:16px;font-weight:500;opacity: 0.8;">Briyani, South Indian, Andhra...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Virukambakkam</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/190d9de2-dd67-427f-9a11-3ece5f1739e0_23760.jpg"alt="McDonald's" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>125 OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 110px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>549</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">McDonald's<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Bugers, Baverages, Cafe...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/21/8def6b0d-1142-4cb7-9f7a-031eb588c68b_650921.jpg"alt="Nandhana Palace" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>199</div>
+
+                <div style="margin-left:  8px">                          
+                      <span style="font-size: 15px;font-weight: 800;">Nandhana Palace<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">30 - 35 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani, South Indian, Andhra...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Velachery</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/sxsgyafmg99w0cecedip"alt="Mani's Dum Briyani" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Mani's Dum Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Andhra, Briyani</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">11th Avenue</span>
+                    </span>
+                </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tscxqcc9d2hmax03rmyo"alt="Briyani Mubaarak" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Briyani Mubaarak<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Alandur</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1154cffac2453eb0bf7fdda7e5ea1659"alt="Dum Safar Briyani" width="250px"height="150px"style="border-radius: 15px;">
+
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>129</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Dum Safar Briyani<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">3.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani,Kababs,Tandoor,Indian...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/e79fd13b-3345-4dd0-9403-1c3daac383e3_862801.JPG"alt="Daily Kitchen - Homely Meals" width="250px"height="150px"style="border-radius: 15px;">
+
+
+                <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>100 OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 110px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>299</div>
+
+                <div style="margin-left:  8px">                          
+                      <span style="font-size: 15px;font-weight: 800;">Daily Kitchen - Homely Meals<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Home Food, Indian, Thalis</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Mosque Street</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/30/5504b259-999f-485a-bcd5-36dff84ac6f3_862795.JPG"alt="WeFit - Protein Bowls, Salad..." width="250px"height="150px"style="border-radius: 15px;">
+
+                <div class="txtimg"style="font-size: 18px;left: 20px;color: red;background-color: white;width: 110px;">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>100 OFF</div>
+
+                <div class="txtimg"style="font-size: 18px;left: 110px;color: red;background-color: white;width: 110px">ABOVE
+                  <i class="fa-solid fa-indian-rupee-sign"></i>299</div>
+
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">WeFit - Protein Bowls, Salad...<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Healthy Food, Salads, Keto...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Mosque Street</span>
+                    </span>
+                </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/deff0d02-ca1d-4ef9-9d62-b0cbeabf33d3_485442.JPG"alt="Big Bowl" width="250px"height="150px"style="border-radius: 15px;">
+
+                <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>169</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Big Bowl<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">North Indian, Chinese, Tibetan,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/3a09279bbf5097a9c768fc9b54478798"alt="Nostalgic Kolkata" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Nostalgic Kolkata<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Bengali, SeaFood, Briyani, Snack... </span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/sbaqjzcvbhj4e25tqjrx"alt="Ayya Chettinad Unavagam" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left:  8px">  
+
+                <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>49</div>                        
+                      <span style="font-size: 15px;font-weight: 800;">Ayya Chettinad Unavagam<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">South Indian, North Indian...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">West Jafferkhanpet</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/n32peilc1znk7vc7qtuz"alt="Night Eat" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                  <div class="txtimg"style="font-size: 18px;left: 100px;color: red;background-color: white;width: 80PX;">50% OFF</div>
+                    <span style="font-size: 15px;font-weight: 800;">Night Eat<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.1</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Chinese, Fast Food, Indian, Briyani...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ekkatuthangal</span>
+                    </span>
+                </div>
+          </div>
+    
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/nmwi6ose8df8uk2gbduy"alt="Annapoorna Hot Veg" width="250px"height="150px"style="border-radius: 15px;">
+                <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i>19</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Annapoorna Hot Veg...<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">25 - 30 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Chinese, South Indian, North...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/qu9hda3xjf6mwebcvxoz"alt="Amma Cheyyi Curry Point" width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="font-size: 18px;left: 20px;"><i class="fa-solid fa-indian-rupee-sign"></i>125 OFF</div>
+               <div class="txtimg"style="font-size: 18px;left: 110px;">ABOVE<i class="fa-solid fa-indian-rupee-sign"></i> 749</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Amma Cheyyi Curry Point<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.3</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">South Indian</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/n6stjllpb5qydqlvdtpu"alt="Dindugul Thalappakatti" width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="font-size: 18px;left: 20px;">ITEMS AT<i class="fa-solid fa-indian-rupee-sign"></i> 199</div>
+                <div style="margin-left:  8px">                          
+                      <span style="font-size: 15px;font-weight: 800;">Dindugul Thalappakatti<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani, Barbecue, South Indian,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/3/f04e2ceb-5b26-49ae-a644-73e2781c78e0_803608.jpg"alt="California Burrito" width="250px"height="150px"style="border-radius: 15px;">
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">California Burrito<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.6</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">20 - 25 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Mexican, American, Salads,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy</span>
+                    </span>
+                </div>
+          </div>
+        
+        </div>
+
+
+        <div class="row">
+
+        <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/18/bf1c498a-75a0-4a8b-a005-2a092674aafe_922145.JPG"alt="Theobroma" width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="right: 150px;">50% OFF</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Theobroma<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.7</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Bakery, Desserts</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Ashok Nagar</span>
+                    </span>
+                </div>
+          </div>
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/28/bd3be622-4491-43b4-a59a-d437aabe9b75_52154.JPG"alt="Faasos - Wraps,Rolls &..." width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="font-size: 18px;left: 20px;">50% OFF UPTO <i class="fa-solid fa-indian-rupee-sign"></i> 100</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">Faasos - Wraps,Rolls &...<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:16px;font-weight: 600;">4.4</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">35 - 40 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Kababs, Fast Food, Snacks...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/4/ee57f797-bf96-4482-8d9c-6eb2a27667f7_525148.jpg"alt="A2B - Adyar Anandha Bhavan" width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="font-size: 18px;left: 20px;"><i class="fa-solid fa-indian-rupee-sign"></i>100 OFF</div>
+                <div style="margin-left:  8px">                          
+                      <span style="font-size: 15px;font-weight: 800;">A2B - Adyar Anandha Bhavan<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">15 - 20 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">South Indian,North Indian,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Guindy</span>
+                    </span>
+                </div>
+          </div>
+
+
+          <div class="col-xs-3 hotel-img">
+               <img class="img-responsive  set1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/16/fc1f5760-3cfb-4495-8831-4f60303dfe12_63004.jpg"alt="LunchBox - Meals And Thalis" width="250px"height="150px"style="border-radius: 15px;">
+               <div class="txtimg"style="font-size: 18px;left: 40px;">ITEMS AT <i class="fa-solid fa-indian-rupee-sign"></i>159</div>
+                <div style="margin-left: 8px;">
+                    <span style="font-size: 15px;font-weight: 800;">LunchBox - Meals And Thalis<br>
+                        <i class="fa-solid fa-star"style="position: absolute;font-size: 14px;transform: translate(4px,12px);color: white;"></i>
+                        <i class="fa-regular fa-circle"style="font-size: 24px;background: green;border-radius: 50%;margin-top: 8px;"></i>
+
+                        <span style="font-size:14px;font-weight: 600;">4.5</span>
+                        <i class="fa-solid fa-circle"style="font-size: 6px;transform: translate(3px,-3px);"></i>
+                        <span style="font-size:14px;margin-left: 8px;font-weight: 600;">30 - 35 mins</span><br>
+
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Briyani, North Indian, Panjabi,...</span><br>
+                        <span style="font-size:14px;font-weight:500;opacity: 0.8;">Vadapalani</span>
+                    </span>
+                </div>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <button type="button" class="btn btn-default showmore"style="width: 250px;height:50px;margin-top: 50px;border-radius: 10px;font-weight: 800;">Show More  <span class="caret"></span></button><br/>
+
+  <hr class="line1">
+
+   <div class="panel panel-default content-panel">
+    <div class="panel-body">
+      <h1 style="font-weight:600">Finding the best restaurants near me</h1>
+      <p>While exploring a different city, it is important to know the best places to eat that capture the vibe and tastes of the city. When we search “best restaurant near me”, we get a list of restaurants that offer nothing but the best of food and experiences. The next step is to order the delicacy you want to try and get it delivered to your doorstep in no time.
+      With the remarkable and speedy food delivery services, it has become so convenient to get exactly what you want simply by ordering, without having to start the preparation....<a href="">Show More<span class="caret"></span></a></p>
+    </div>
+  </div>
+  <div style="position: relative;margin-left: 180px;">
+    <h1 style="font-size:20px;font-weight:bold;">Cuisine Restaurants Near Me</h1>
+    <div style="display: flex;flex-direction:column;">
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            African Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Afghani Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            American Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Andhra Restaurant near me</button>
+        </div>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Arabian Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Asian Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Awadhi Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Bakery Restaurant near me</button>
+        </div>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Barbecue Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Bengali Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Beverages  Restaurant near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Show More  <span class="caret"></span></button>
+        </div>
+
+        <h1 style="font-size:20px;font-weight:bold;">Restaurant Chains Near Me</h1>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            CakeZone</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Gourmet Ice Cream Cakes by <br/>Baskin Robbins</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">The Good Bowl</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Kouzina Kafe - The Food Court</button>
+        </div>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Kenventers Ice Cream</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            BK Cafe</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Taco Bell</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            The Dessert Heaven - Pure Veg</button>
+        </div>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Chinese Wok</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            ITC Fabelle Chocolates</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Indian Burgers</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Show More  <span class="caret"></span></button>
+        </div>
+
+        <h1 style="font-size:20px;font-weight:bold;">Popular Dishes Near Me</h1>
+
+        <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Panner near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Rasagulla near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Brownie near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Mashroom Masala near me</button>
+        </div>
+
+         <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            Butter Naan near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Dahi Vada near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Mutton Curry near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+             Veg Pizza near me</button>
+        </div>
+
+         <div style="display:flex;flex-direction: row;margin-top: 30px;">
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;">
+            French Fries near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Fried Chicken near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">Idli near me</button>
+
+            <button type="button" class="btn btn-default"style="width: 250px;height: auto;padding: 12px;border-radius: 10px;margin-left: 40px;">
+            Show More <span class="caret"></span></button>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="last-container">
+
+      <div style="display:flex;flex-direction: column;">
+
+        <div style="display:flex;flex-direction: row;">
+           <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_800,h_800/portal/m/logo_192x192.png"alt="Swiggy-emblem"style="width: 50px;height: 50px;margin: 50px 0px 0px 200px;">
+           <span style="margin:53px 0px 0px 15px;font-weight:800;font-size:26px;color:#f54040;">Swiggy</span>
+        </div>
+
+        <span style="margin-left:205px; margin-top: 16px;"><span class="glyphicon glyphicon-copyright-mark" style="margin-right: 4px;"></span>2024 Swiggy Limited</span>
+      </div>
+
+      <div class="head">Company
+
+        <a href=""class="link" style="font-weight: 200; color: rgba(2, 6, 12, 0.6)">About Us</a>
+        <a href=""class="link">Swiggy Corporate</a>
+        <a href=""class="link">Careers</a>
+        <a href=""class="link">Team</a>
+        <a href=""class="link">Swiggy One</a>
+        <a href=""class="link">Swiggy Instamart</a>
+        <a href=""class="link">Swiggy Dineout</a>
+        <a href=""class="link">Swiggy Genie</a>
+      </div>
+
+      <div style="margin-top:30px;margin-left:100px;font-weight: bold;display: flex;flex-direction: column;font-size: 18px;">Contact Us
+
+          <a href=""class="link">Help & Support</a>
+          <a href=""class="link">Partner With Us</a>
+          <a href=""class="link">Ride With Us</a>
+
+          <br/><br/>
+
+          <div style="font-weight: bold;display: flex;flex-direction: column;font-size: 18px;">Legal
+            <a href=""class="link">Terms & <br/>Condition</a>
+            <a href=""class="link">Cookie Policy</a>
+            <a href=""class="link">Privacy Policy</a>
+            <a href=""class="link">Investor Relation</a>
+          </div>
+      </div>
+
+      <div style="margin-top:30px;margin-left:100px;font-weight: bold;display: flex;flex-direction: column;font-size: 18px;">Availabe In:
+
+        <a href=""class="link">Bangalore</a>
+        <a href=""class="link">Gurgaon</a>
+        <a href=""class="link">Hyderabad</a>
+        <a href=""class="link">Delhi</a>
+        <a href=""class="link">Mumbai</a>
+        <a href=""class="link">Pune</a>
+        <button type="button" class="btn btn-default city">679 Cities<span class="caret"style="margin-left: 30px;"></span></button>
+      </div>
+
+      <div style="margin-top:30px;margin-left:100px;font-weight: bold;display: flex;flex-direction: column;font-size: 18px;">Life at Swiggy
+        <a href=""class="link">Explore With Swiggy</a>
+        <a href=""class="link">Swiggy News</a>
+        <a href=""class="link">Snackables</a>
+
+        <br/><br/>
+
+          <div style="font-weight: bold;display: flex;flex-direction:column;font-size: 18px;">Social Links
+            <div style="display:flex;flex-direction: row;justify-content: space-between;margin-top: 15px;">
+                <a href=""class="link"><i class="fa-brands fa-linkedin"style="font-size: 20px;"></i></a>
+                <a href=""class="link"><i class="fa-brands fa-instagram"style="font-size: 20px;"></i></a>
+                <a href=""class="link"><i class="fa-brands fa-facebook-f"style="font-size: 20px;"></i></a>
+                <a href=""class="link"><i class="fa-brands fa-pinterest"style="font-size: 20px;"></i></a>
+                <a href=""class="link"><i class="fa-brands fa-twitter"style="font-size: 20px;"></i></a>
+            </div>
+          </div>
+      </div>
+ </div>
+
+ <div class="app">
+
+     <hr class="line1"style="border-top: 1px solid black;margin-left: 180px;width: 1200px;">
+
+      <div style="display:flex;flex-direction: row;">
+        <h3 style="font-weight:bold;margin-left: 200px;">For better experience,download the Swiggy app now</h3>
+        <button type="button" class="btn btn-default  gplay">
+          <img src="https://logos-world.net/wp-content/uploads/2020/12/Google-Play-icon-logo.png"class="gp-img"alt="Google-Play-icon-logo">
+          <span style="padding-left: 30px;">GET IT ON</span><br/>
+          <span style="font-size:20px;padding-left: 70px;">Google Play</span>
+        </button>
+
+        <button type="button" class="btn btn-default  gplay">
+          <i class="fa-brands fa-apple  gp-img"style="font-size: 50px;padding-left: 20px;"></i>
+          <span style="padding-left: 50px;">Download on the</span><br/>
+          <span style="font-size:20px;padding-left: 35px;">App Store</span>
+        </button>
+
+      </div>
+      <br/><br/><br/>
+</div>
+</div>
+</div>
 </body>
 </html>
