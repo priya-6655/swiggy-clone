@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="test.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Order Food & Groceries Online</title>
+    </head>
+
+    <body>
+    
+        <div id="content_Wrapper">
+
+            <div class="nav_line">
+
+                <div class="sw_logo">
+
+                    <img src="https://static.vecteezy.com/system/resources/previews/050/816/833/non_2x/swiggy-transparent-icon-free-png.png"alt="swiggy_logo" >
+                        <h1 class="heading">Swiggy</h1>
+                </div>
+
+
+            <div class="nav_items">             
+                <div class="corp_nav">
+
+                    <a href="" class="info_Us">Swiggy Corporate</a>
+                    <a href="" class="info_Us">Partner with us</a>
+                </div>
+
+                <div class="btn_row">
+                    <button type="button" class="get_APP">Get the app
+                        <i class="fa-solid fa-arrow-up" style="transform:rotate(45deg);font-size: 20px;"></i></button>
+
+                    <button type="button" onclick="Sidebar_open()" class="sign_In">Sign in</button>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="container first_container" style="margin-top: 100px;">
+
+                <div style="display:flex;flex-direction: row;height: 150px;">
+
+                    <div class="side_img1">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"alt="parcel_img" style="width: 300px;height: 300px;" />
+                </div>
+
+
+                <h1 class="content_Zone">Order food & groceries. Discover <br />best restaurants. Swiggy it!</h1>
+
+
+                <div class="side_img2">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+                        alt="parcel_img1" style="width: 300px;height: 300px;" />
+                </div>
+
+            </div>
+
+                <div class="Search_rest">
+                    <button class="btn btn-primary dropdown-toggle location_grp" type="button" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-map-marker" style="margin-right: 10px;"></span>Find Location
+                        <span class="glyphicon glyphicon-menu-down" style="margin-left: 150px;"></span>
+                    </button>
+
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search for restaurant,item or more">
+                    <span class="glyphicon glyphicon-search gsearch_icon"></span>
+                </div>
+
+
+                <div class="cart_item">
+                    <a href=""><button type="button" class="Category">
+                            <div class="inside-Label">
+                                <h2 style="font-weight: 800;">FOOD DELIVERY</h2>
+                                <p style="color:#989a9e;font-weight:800">FROM RESTAURANT</p>
+
+                                <div class="offer_Tag">UPTO 60% OFF</div>
+
+                                <div class="Right_Arrow">
+                                    <i class="fa-solid fa-arrow-right Arrow_Icon"></i>
+
+                                    <img src="https://preview.redd.it/south-indian-meals-v0-2x7zbnpjpabd1.jpeg?width=640&crop=smart&auto=webp&s=7aa17d886ea737e837652f67bc10409a90427b55"class="img_tag" />
+
+                                </div>
+                            </div>
+                        </button></a>
+
+                    <a href=""><button type="button" class="Category">
+                            <div class="inside-Label">
+                                <h2 style="font-weight: 800;">DINEOUT</h2>
+                                <p style="color:#989a9e;font-weight:800">EAT OUT & SAVE MORE</p>
+
+                                <div class="offer_Tag">UPTO 50% OFF</div>
+                                <div class="Right_Arrow">
+                                    <i class="fa-solid fa-arrow-right Arrow_Icon"></i>
+                                    <img src="https://png.pngtree.com/png-vector/20240125/ourlarge/pngtree-spoon-and-fork-in-wooden-plate-isolated-png-image_11491830.png"
+                                        class="img_tag" />
+                                </div>
+                            </div>
+                        </button></a>
+                    <a href=""><button type="button" class="Category">
+                            <div class="inside-Label">
+                                <h2 style="font-weight: 800;">GENIE</h2>
+                                <p style="color:#989a9e;font-weight:800">PICK-UP & DROP</p>
+
+                                <div class="offer_Tag">UPTO 50% OFF</div>
+                                <div class="Right_Arrow">
+                                    <i class="fa-solid fa-arrow-right Arrow_Icon"></i>
+                                    <img src="https://img.freepik.com/free-psd/3d-render-isolated-delivery-box-icon_439185-12871.jpg?semt=ais_hybrid"
+                                        class="img_tag" />
+                                </div>
+                            </div>
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Signin_sidebar" id="mySidebar">
+            <button onclick="Sidebar_close()" class="Signin-bar-item"
+                style="width:0px;height:0px;">&times;</button>
+
+
+            <div id="sidebarContent">
+
+
+
+                <div class="login_img_row">
+
+
+                    <div style="display: inline-block; flex-direction: column; ">
+                        <h1 style="display: block;">Login</h1>
+                        <div style="display: inline-block; flex-direction: row;">
+                            <span class="sidebar-link" style="color: #000 !important">or </span>
+                            <span class="sidebar-link" onclick="changeSidebarContent('Signup')">Create an account</span>
+                        </div>
+                    </div>
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r"
+                        alt="Veg_Roll" class="Login_img" />
+                </div>
+                <input type="tel" id="ph_number" name="ph_number" placeholder="Phone number" maxlength="10">
+
+
+                 <div class="Condition_line">
+
+
+                     <button type="button" class="btn btn-danger Login_btn">Login</button><br />
+                     <small style="font-weight:400;">By clicking on Login, I accept the Terms & Conditions &
+                         Privacy Policy</small>
+                 </div>
+            </div>
+        </div>
+
+        <script>
+
+            function Sidebar_open() {
+                document.getElementById("mySidebar").style.display = "block"; // Open sidebar
+                document.getElementById("content_Wrapper").classList.add("blur");
+            }
+
+            function Sidebar_close() {
+                document.getElementById("mySidebar").style.display = "none"; // Close sidebar
+                document.getElementById("content_Wrapper").classList.remove("blur");
+            }
+
+            function changeSidebarContent(type) {
+                let content = "";
+
+                if (type === "Signup") {
+                    content = `
+                        <div class="Signup_img_row">
+                            <div style="display: inline-block; flex-direction: column; ">
+                                
+                                <h1>Signup</h1>
+                                <span class="sidebar-link"style="color:black !important">or</span>
+                                <span class="sidebar-link" onclick="changeSidebarContent('Login')">Login your account</span>
+                            </div>
+                                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r" alt="Veg_Roll" class="Login_img" />
+                        </div>
+                        
+                        <div class="input_items">
+                        <input type="tel" id="ph_number" name="ph_number" placeholder="Phone number" maxlength="10">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="50">
+                        <button type="button" class="btn btn-danger Login_btn">Sign Up</button><br/>
+                        </div>
+                    `;
+                } else {
+                    content = `
+                        <div class="login_img_row">
+                            <div style="display: inline-block; flex-direction: column; ">
+
+                                <h1>Login</h1>
+                                <span class="sidebar-link"style="color:black !important">or</span>
+                                <span class="sidebar-link" onclick="changeSidebarContent('Signup')">Create an account</span>
+                            </div>
+                                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r" alt="Veg_Roll" class="Login_img" />
+                            
+                        </div>
+
+                        <input type="tel" id="ph_number" name="ph_number" placeholder="Phone number" maxlength="10">
+                        <div class="Condition_line">
+                            <button type="button" class="btn btn-danger Login_btn">Login</button><br/>
+                            <small style="font-weight:400">By clicking on Login, I accept the Terms & Conditions Privacy policy</small>
+                        </div>
+                    `;
+                }
+                document.getElementById("sidebarContent").innerHTML = content;
+            }
+        </script>
+
+    </body>
+
+</html>
