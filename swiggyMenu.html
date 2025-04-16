@@ -18,7 +18,85 @@
   <body>
     <div class="container-fluid" style="background-color: white;margin: 0;padding: 0;">
 
+<nav class="navbar navbar-default" style="background-color:white;">
 
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#" id="sw-btn">
+
+              <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" class="img-circle"
+                alt="swiggy" width="100px" height="50px">
+
+              <ul class="nav navbar-nav navbar-right">
+
+                <li class="nav-clr"><a href="#" onclick="SidebarLocation_open()">Other
+                    <span class="glyphicon glyphicon-menu-down" style="color: orange;"></span></a></li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
+                  <i class="fa-solid fa-grip-lines" style="position: absolute;"></i>
+                  <i class="fa-regular fa-square"></i>
+                  Swiggy Corporate</a></li>
+
+              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
+                  <span class="glyphicon glyphicon-search" style="margin-right: 8px;"></span>Search</a></li>
+
+              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
+                  <i class="fa-brands fa-cloudsmith"></i>
+                  Offers<span class="badge label">New</span></a></li>
+
+              <li class="nav-clr1"><a href="#" style="font-weight: 800;margin-left: 10px;">
+                  <i class="fa-solid fa-life-ring" style="margin-right:5px"></i>Help</a></li>
+
+              <li class="nav-clr1"><a href="./index.html"target="_self" style="font-weight: 800;">
+                  <span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>Sign In</a></li>
+
+              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
+                  <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 5px;"></span>Cart</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="display-Location" id="myLocation">
+        <button onclick="SidebarLocation_close()" class="Signin-bar-item" style="width:0px;height:0px;">&times;</button>
+
+        <div id="sidebarContent">
+          <input type="search" name="SearchLocation" id="findMy-location" placeholder="Search for area, street name..." />
+
+          <div class="current-Location">
+            <i class="fa-solid fa-location-crosshairs" style="font-size:25px;color: gray;"></i>
+            <div style="display:flex;flex-direction: column;justify-content: center;align-items: center;margin-left: 20px;">
+            <span class="location-span">Get current location</span>
+            <span style="margin-right:80px">Using GPS</span>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+      </nav>
+
+ <script>
+        function SidebarLocation_open(){
+          document.getElementById("myLocation").style.display = "block"; 
+          document.querySelector(".inner-container").classList.add("blurred");
+        }
+        function SidebarLocation_close(){
+          document.getElementById('myLocation').style.display = "none";
+          document.querySelector(".inner-container").classList.remove("blurred");
+        }
+      </script>
 
 
   <div class="displayContElement">
@@ -900,38 +978,8 @@
 
      </div>
 
-        <div class="display-Location" id="myLocation">
-        <button onclick="SidebarLocation_close()" class="Signin-bar-item" style="width:0px;height:0px;">&times;</button>
 
-        <div id="sidebarContent">
-          <input type="search" name="SearchLocation" id="findMy-location" placeholder="Search for area, street name..." />
-
-          <div class="current-Location">
-            <i class="fa-solid fa-location-crosshairs" style="font-size:25px;color: gray;"></i>
-            <div style="display:flex;flex-direction: column;justify-content: center;align-items: center;margin-left: 20px;">
-            <span class="location-span">Get current location</span>
-            <span style="margin-right:80px">Using GPS</span>
-          </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      </nav>
-
-      <script>
-        function SidebarLocation_open(){
-          document.getElementById("myLocation").style.display = "block"; 
-          document.querySelector(".inner-container").classList.add("blurred");
-        }
-        function SidebarLocation_close(){
-          document.getElementById('myLocation').style.display = "none";
-          document.querySelector(".inner-container").classList.remove("blurred");
-        }
-      </script>
-
-      <div class="container inner-container">
+  <div class="container inner-container">
 
         <div class="restaurant-menu">
           <span class="link"><a href="">Home /</a></span>
