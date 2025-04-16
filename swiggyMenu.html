@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="swiggy.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,58 +16,1409 @@
   </head>
 
   <body>
-    <div class="container-fluid custom-height" style="background-color: white;margin: 0;padding: 0;">
+    <div class="container-fluid" style="background-color: white;margin: 0;padding: 0;">
 
-      <nav class="navbar navbar-default" style="background-color:white;">
 
-        <div class="container-fluid">
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
 
-            <a class="navbar-brand" href="#" id="sw-btn">
+  <div class="displayContElement">
+    <div class="InsideBox-Element">
+      <div class="textBoxInItem">
+        <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+            <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 
+        </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
 
-              <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" class="img-circle"
-                alt="swiggy" width="100px" height="50px">
+       <div class="round-cls">
+          <span class="close-btn" onclick="closePopupBox()">&times;</span>
+        </div>
 
-              <ul class="nav navbar-nav navbar-right">
+    <hr style="margin-top:80px;border:1px solid gray;width: 550px;"/>
 
-                <li class="nav-clr"><a href="#">Other
-                    <span class="glyphicon glyphicon-menu-down" style="color: orange;"></span></a></li>
-              </ul>
-            </a>
+    <div class="textBoxIn2">
+      <span>Choose Your Crust</span>
+
+      <div class="item-inside">
+        <div class="inside-Menu01">
+          <div class="veg-Box1"></div>
+          <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+
+          <span style="margin-left:40px;font-size:16px">Pan</span>
+     
+          <input type="radio" name="nonvegItem"id = "skew-btn"value="1"checked onclick="thirdOption('Pan')">
+        </div>
+
+        <div class="inside-Menu02">
+          <div class="veg-Box1"></div>
+          <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+
+              <span style="margin-left:40px">Stuffed Crust - Maxx</span>
+              <input type="radio" name="nonvegItem"id = "skew-btn" value="2" onclick="thirdOption('Stuffed Crust - Maxx')">
+        </div>
+
+        <div class="inside-Menu03">
+          <div class="veg-Box1"></div>
+          <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+
+              <span style="margin-left:40px">Stuffed Crust - Chicken Seekh Kebab</span>
+              <input type="radio" name="nonvegItem"id = "skew-btn"value="3" onclick="thirdOption('Stuffed Crust - Chicken Seekh Kebab')">
+        </div>
+
+        <div class="inside-Menu04">
+          <div class="veg-Box1"></div>
+          <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+
+              <span style="margin-left:40px">Thin n Crispy</span>
+              <input type="radio" name="nonvegItem"id = "skew-btn"value="4" onclick="thirdOption('Thin n Crispy')">
+        </div>
+
+
+    </div>
+
+  </div>
+
+    <div class="continue-box">
+        <span class="txt-continue">Step 1/2</span>
+        <button type="button" class="btn btn-success btn-continue" onclick="displayNext2()">Continue</button>
+    </div>
+
+</div>
+</div>
+
+
+<div class="nxt-pageBox2" style="z-index: 999 !important;">
+      <div style="display:flex;flex-direction: column;margin-left: 15px;margin-top: 10px;font-weight: bold;color: black;">
+          <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+          <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 </span>
+          <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+      <span class="close-btn" onclick="closePopupBox()">&times;</span>
+    </div>
+
+      <div class="nxtPage-content2"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+            <span style="margin-top:4px" id="NonvegCrust">Pan</span>
+            <span class="change-prevPage2" onclick="showPrev()">Change</span>
+      </div>
+
+
+     <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
+
+      <span style="position:absolute;top: 38%;left: 4%;font-weight: bold;color: black;">Choose Size</span>
+
+      <div class="size-box2" style="display: flex;flex-direction: row;">
+          <div style="margin-top: 20px;margin-left: 8px;">
+              <div class="veg-Box1"></div>
+              <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
           </div>
 
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" style="margin-top: 5px;">
-              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
-                  <i class="fa-solid fa-grip-lines" style="position: absolute;"></i>
-                  <i class="fa-regular fa-square"></i>
-                  Swiggy Corporate</a></li>
+          <div style="margin-left: 30px;margin-top: 15px;">
+              <span>Personal</span>
+              <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>379</span>
+              <input type="radio" name="chooseRateItem" id="round-btn" value="1" checked onclick="rateOption('Rs 379')"/>
+          </div>
 
-              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
-                  <span class="glyphicon glyphicon-search" style="margin-right: 8px;"></span>Search</a></li>
 
-              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
-                  <i class="fa-brands fa-cloudsmith"></i>
-                  Offers<span class="badge label">New</span></a></li>
 
-              <li class="nav-clr1"><a href="#" style="font-weight: 800;margin-left: 10px;">
-                  <i class="fa-solid fa-life-ring" style="margin-right:5px"></i>Help</a></li>
+        <div>
+          <div style="margin-top: 30px;">
+              <div class="veg-Box1" style="transform:translate(-95px,20px);"></div>
+              <div style="transform: translate(-90px,22px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+          </div>
 
-              <li class="nav-clr1"><a href="C:\Users\Vigneshwaran\Documents\learn-with-priya\learned\swiggy\sw_login.html"target="_self" style="font-weight: 800;">
-                  <span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>Sign In</a></li>
+          <div>
+              <span style="position: absolute;left: 45px;">Medium</span>
+              <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>639</span>
+              <input type="radio" name="chooseRateItem" id="round-btn" value="2" onclick="rateOption('Rs 639')" />
+          </div>
+    
+        </div>
+    </div>
 
-              <li class="nav-clr1"><a href="#" style="font-weight: 800;">
-                  <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 5px;"></span>Cart</a></li>
-            </ul>
+            <div class="continue-box">
+                     <span class="txt-continue">Step 2/2</span>
+                      <button type="button" class="btn btn-success btn-continue" onclick="displayNextFourth()">Continue</button>
+            </div>
+      </div>
+  </div>
+
+  <div class ="finalBox">
+    <div class="insideFinalBox">
+
+      <div class="finalBoxInItem">
+        <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+            <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 
+        </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+          <span class="close-btn" onclick="closePopupBox()">&times;</span>
+      </div>
+
+      <div class="nxtPage-content2"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+          <span style="margin-top:4px" id="NonvegCrust">Pan</span>
+          <span class="change-prevPage2">Change</span>
+      </div>
+
+
+     <hr style="margin-top:200px;border: 1px solid gray;width: 550px;" />
+<div>
+     <span style="margin-left:35px;font-weight: bold;color: black;">Extra Cheese Topping</span>
+
+     <div class="extraItem">
+       <div class="veg-Box" style="transform:translateX(20px);"></div>
+       <div class="veg-Dot" style="transform:translate(21px,21px);"></div>
+       <span style="margin-left:50px">Cheese</span>
+
+       <div style="position: absolute;right: 20px;">
+         <i class="fa-solid fa-plus" style="font-size:14px"></i>
+         <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+         <span style="font-size:16px">65</span>
+         <input type="checkbox" name="checkboxItem" class ="selectRate" data-rate="65" onclick="addRate()" />
+       </div>
+     </div>
+</div>
+
+<div>
+     <span style="position:absolute;top: 50%;left: 6%;color: black;font-weight: bold;">Add More Veg Toppings Personal (0/2)</span>
+    <div class="selectMore">
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,12px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Black Olives</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRate" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,42px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Capsicum</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRate" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,72px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Mushroom</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRate" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,102px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Onion</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRate" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+      <span style="cursor: pointer;font-weight: bold;font-size: 14px;margin-top: 20px;margin-left: 20px;">
+        <i class="fa-solid fa-plus" style="font-size:12px"></i>
+        <span>6 More</span>
+      </span>
+
+    </div>
+</div>
+
+<div class="continue-box">
+      <span class="txt-continue" id="finalShowRate"> </span>
+      <button type="button" class="btn btn-success btn-continue" onclick="itemAddButton()">Add item to cart</button>
+</div>
+</div>
+</div>
+
+  <script>
+    let nonvegValue = 'Pan';
+
+    let rateCalculate = 379;
+
+    function rateOption(option) {
+      rateCalculate = parseInt(option);
+    }
+
+    function thirdOption(option){
+      nonvegValue = option;
+    }
+
+    function displayNext2(){
+      document.querySelector('.displayContElement').style.visibility = 'hidden';
+      document.querySelector('.continue-box').style.display = 'none';
+
+      document.querySelector('.nxt-pageBox2').style.display = 'block';
+      document.getElementById('NonvegCrust').textContent = nonvegValue;
+      document.getElementById('NonvegCrust').style.whiteSpace = 'nowrap';
+    }
+    function showPrev(){
+      document.querySelector('.displayContElement').style.visibility = 'visible';
+      document.querySelector('.continue-box').style.display = 'block';
+      document.querySelector('.nxt-pageBox2').style.display = 'none';
+    }
+
+    function displayNextFourth() {
+      document.getElementById('finalShowRate').textContent = rateCalculate || "No rate selected";
+      document.querySelector('.nxt-pageBox2').style.visibility = "hidden";
+      document.querySelector('.continue-box').style.display = 'none';
+      document.querySelector('.finalBox').classList.add('finalDisplay');
+
+    }
+
+    function itemAddButton() {
+        alert('Item added succesfully');
+        document.querySelector('.finalBox').classList.remove('finalDisplay');
+        document.querySelector('.inner-container').classList.remove('blurred');
+
+        document.querySelector('.add-btn').classList.add('hide-Btn');
+        document.querySelector('.itemToCart').classList.add('view-Btn');
+    }
+    function addRate() {
+        let extraItem = 0;
+
+        document.querySelectorAll('.selectRate').forEach((checkbox) => {
+        if (checkbox.checked) {
+            extraItem += parseInt(checkbox.getAttribute('data-rate')); // always number
+        }
+    });
+
+        let total = rateCalculate + extraItem;
+
+        document.getElementById('finalShowRate').textContent = total;
+}
+  </script>
+
+<div class="display-cont">
+    <div class="inside-box">
+      <div class="textBoxIn">
+        <span>Tandoori Paneer . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 319 -
+         <i class="fa-solid fa-indian-rupee-sign item-price"></i> 749 </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+       <div class="round-cls">
+      <span class="close-btn" onclick="closePopupBox()">&times;</span>
+    </div>
+
+    <hr style="margin-top:80px;border:1px solid gray;width: 550px;"/>
+
+    <div class="textBoxIn1">
+      <span>Choose Your Crust</span>
+
+      <div class="inside-Item">
+        <div class="inside-Menu">
+          <div class="veg-Box"></div>
+          <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+          <span style="margin-left:40px;font-size:16px">Pan</span>
+     
+          <input type="radio" name="mark1"id = "radio-btn"value="1"checked onclick="secondOption('Pan')">
+        </div>
+
+        <div class="inside-Menu1">
+          <div class="veg-Box"></div>
+          <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+              <span style="margin-left:40px">Stuffed Crust - Maxx</span>
+              <input type="radio" name="mark1"id = "radio-btn" value="2" onclick="secondOption('Stuffed Crust - Maxx')">
+        </div>
+
+        <div class="inside-Menu2">
+          <div class="veg-Box"></div>
+          <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+              <span style="margin-left:40px">Thin n Crispy</span>
+              <input type="radio" name="mark1"id = "radio-btn"value="3" onclick="secondOption('Thin n Crispy')">
+        </div>
+
+    </div>
+
+  </div>
+
+    <div class="continue-box">
+        <span class="txt-continue">Step 1/2</span>
+        <button type="button" class="btn btn-success btn-continue" onclick="displayNext1()">Continue</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="nxt-pageBox1">
+      <div style="display:flex;flex-direction: column;margin-left: 15px;margin-top: 10px;font-weight: bold;color: black;">
+          <span>Tandoori Paneer . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 319 -
+          <i class="fa-solid fa-indian-rupee-sign item-price"></i> 749 </span>
+          <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+      <span class="close-btn" onclick="closePopupBox()">&times;</span>
+    </div>
+
+      <div class="nxtPage-content1"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+            <span style="margin-top:4px" id="selectedCrustNxt">Pan</span>
+            <span class="change-prevPage1" onclick="changeOption()">Change</span>
+      </div>
+
+
+     <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
+
+      <span style="position:absolute;top: 38%;left: 4%;font-weight: bold;color: black;">Choose Size</span>
+
+      <div class="size-box1" style="display: flex;flex-direction: row;">
+          <div style="margin-top: 20px;margin-left: 8px;">
+              <div class="veg-Box"></div>
+              <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
+          </div>
+
+          <div style="margin-left: 30px;margin-top: 15px;">
+              <span>Personal</span>
+              <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>319</span>
+              <input type="radio" name="chooseRate2" id="radio-btn" value="1" checked />
+          </div>
+    
+
+
+
+          <div style="position:absolute;top: 40%;">
+
+                  <div style="margin-top: 20px;margin-left: 8px;">
+                     <div class="veg-Box"></div>
+                        <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
+                      </div>
+
+                      <div style="margin-left: 40px;margin-top: 15px;">
+                          <span>Medium</span>
+                          <span style="margin-top: 65px;margin-left: 285px;"><i class="fa-solid fa-indian-rupee-sign"></i>569</span>
+                          <input type="radio" name="chooseRate2" id="radio-btn" value="2" />
+                      </div>
+                  </div>
+          </div>
+
+           <div class="continue-box">
+                     <span class="txt-continue">Step 2/2</span>
+                      <button type="button" class="btn btn-success btn-continue" onclick="displayNextThird()">Continue</button>
+            </div>
+      </div>
+
+
+
+<div class ="finalBox1">
+    <div class="insideFinalBox">
+
+      <div class="finalBoxInItem">
+        <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+            <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 
+        </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+          <span class="close-btn" onclick="closePopupBox()">&times;</span>
+      </div>
+
+      <div class="nxtPage-content2"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+          <span style="margin-top:4px" id="NonvegCrust">Pan</span>
+          <span class="change-prevPage2">Change</span>
+      </div>
+
+
+     <hr style="margin-top:200px;border: 1px solid gray;width: 550px;" />
+<div>
+     <span style="margin-left:35px;font-weight: bold;color: black;">Extra Cheese Topping</span>
+
+     <div class="extraItem">
+       <div class="veg-Box" style="transform:translateX(20px);"></div>
+       <div class="veg-Dot" style="transform:translate(21px,21px);"></div>
+       <span style="margin-left:50px">Cheese</span>
+
+       <div style="position: absolute;right: 20px;">
+         <i class="fa-solid fa-plus" style="font-size:14px"></i>
+         <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+         <span style="font-size:16px">65</span>
+         <input type="checkbox" name="checkboxItem" class ="selectRateveg" data-rate="65" onclick="addRate()" />
+       </div>
+     </div>
+</div>
+
+<div>
+     <span style="position:absolute;top: 50%;left: 6%;color: black;font-weight: bold;">Add More Veg Toppings Personal (0/2)</span>
+    <div class="selectMore">
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,12px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Black Olives</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,42px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Capsicum</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,72px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Mushroom</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,102px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Onion</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+      <span style="cursor: pointer;font-weight: bold;font-size: 14px;margin-top: 20px;margin-left: 20px;">
+        <i class="fa-solid fa-plus" style="font-size:12px"></i>
+        <span>6 More</span>
+      </span>
+
+    </div>
+</div>
+
+<div class="continue-box">
+      <span class="txt-continue" id="finalShowRate1"> </span>
+      <button type="button" class="btn btn-success btn-continue" onclick="itemAddButtonveg()">Add item to cart</button>
+</div>
+</div>
+</div>
+
+
+<script>
+    let showValue = "Pan"; // default selected
+
+  function secondOption(option) {
+    showValue = option;
+  }
+
+  function displayNext1() {
+    // Hide step 1
+    document.querySelector(".display-cont").style.display = "none";
+    document.querySelector(".continue-box").style.display = "none";
+
+    // Show step 2
+    document.querySelector(".nxt-pageBox1").style.display = "block";
+    document.getElementById("selectedCrustNxt").textContent = showValue;
+    document.getElementById('selectedCrustNxt').style.whiteSpace = 'nowrap';
+  }
+
+  function changeOption(){
+      document.querySelector('.display-cont').style.display = 'block';
+      document.querySelector('.continue-box').style.display = 'block';
+      document.querySelector('.nxt-pageBox1').style.display = 'none';
+    }
+
+    function displayNextThird() {
+      document.getElementById('finalShowRate1').textContent = rateCalculate || "No rate selected";
+      document.querySelector('.nxt-pageBox1').style.visibility = "hidden";
+      document.querySelector('.continue-box').style.display = 'none';
+      document.querySelector('.finalBox1').classList.add('finalDisplayveg');
+
+    }
+
+    function itemAddButtonveg() {
+        alert('Item added succesfully');
+        document.querySelector('.finalBox1').classList.remove('finalDisplayveg');
+        document.querySelector('.inner-container').classList.remove('blurred');
+
+        document.querySelector('.add-btn1').classList.add('hide-Btnveg');
+        document.querySelector('.itemToCartveg').classList.add('view-Btnveg');
+    }
+    function addRate() {
+        let extraItem = 0;
+
+        document.querySelectorAll('.selectRateveg').forEach((checkbox) => {
+        if (checkbox.checked) {
+            extraItem += parseInt(checkbox.getAttribute('data-rate')); // always number
+        }
+    });
+
+        let total = rateCalculate + extraItem;
+
+        document.getElementById('finalShowRate1').textContent = total;
+}
+  </script>
+
+
+
+  
+<div class="show-Cont">
+  <div class="popup-box">
+    <div class="box-txt">
+        <span>veggie Supreme . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+         <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+    </div>
+
+    <div class="round-cls">
+      <span class="close-btn" onclick="closePopupBox()">&times;</span>
+    </div>
+
+    <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
+
+    <div class="box-txt1">  
+      <span>Choose Your Crust</span>
+
+
+    <div class="category-item">
+
+    
+    <div class="inside-category">
+      <div class="veg-Box"></div>
+      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+          <span style="margin-left:40px;font-size:16px">Pan</span>
+     
+          <input type="radio" name="select1"id = "radio-btn"value="1"checked onclick="selectOption('Pan')">
+
+    </div>
+
+
+<div class="inside-category1">
+    <div class="veg-Box"></div>
+      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+      <span style="margin-left:40px">Stuffed Crust - Maxx</span>
+      <input type="radio" name="select1"id = "radio-btn" value="2" onclick="selectOption('Stuffed Crust - Maxx')">
+</div>
+
+<div class="inside-category2">
+    <div class="veg-Box"></div>
+      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+      <span style="margin-left:40px">Thin n Crispy</span>
+      <input type="radio" name="select1"id = "radio-btn"value="3" onclick="selectOption('Thin n Crispy')">
+</div>
+
+</div>
+
+</div>
+
+    <div class="continue-box">
+        <span class="txt-continue">Step 1/2</span>
+        <button type="button" class="btn btn-success btn-continue" onclick="displayNext()">Continue</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="nxt-pageBox" style="display:block;">
+      <div style="display:flex;flex-direction: column;margin-left: 15px;margin-top: 10px;font-weight: bold;color: black;">
+          <span>veggie Supreme . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+          <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 </span>
+          <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+      <span class="close-btn" onclick="closePopupBox()">&times;</span>
+    </div>
+
+      <div class="nxtPage-content"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+            <span style="margin-top:4px" id="vegCrust">Pan</span>
+            <span class="change-prevPage" onclick="displyPrevious()">Change</span>
+      </div>
+
+
+     <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
+
+      <span style="position:absolute;top: 38%;left: 4%;font-weight: bold;color: black;">Choose Size</span>
+
+      <div class="size-box" style="display: flex;flex-direction: row;">
+          <div style="margin-top: 20px;margin-left: 8px;">
+              <div class="veg-Box"></div>
+              <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
+          </div>
+
+          <div style="margin-left: 30px;margin-top: 15px;">
+              <span>Personal</span>
+              <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>379</span>
+              <input type="radio" name="chooseRate1" id="radio-btn1" value="1" checked />
+          </div>
+    
+
+
+
+          <div style="position:absolute;top: 40%;">
+
+                  <div style="margin-top: 20px;margin-left: 8px;">
+                     <div class="veg-Box"></div>
+                        <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
+                      </div>
+
+                      <div style="margin-left: 40px;margin-top: 15px;">
+                          <span>Medium</span>
+                          <span style="margin-top: 65px;margin-left: 285px;"><i class="fa-solid fa-indian-rupee-sign"></i>639</span>
+                          <input type="radio" name="chooseRate1" id="radio-btn1" value="2" />
+                      </div>
+                  </div>
+          </div>
+
+           <div class="continue-box">
+                     <span class="txt-continue">Step 2/2</span>
+                      <button type="button" class="btn btn-success btn-continue" onclick="displayNextSec()">Continue</button>
+                  </div>
+      </div>
+  
+
+
+<div class ="finalBox2">
+    <div class="insideFinalBox">
+
+      <div class="finalBoxInItem">
+        <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
+            <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 
+        </span>
+        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
+      </div>
+
+      <div class="round-cls">
+          <span class="close-btn" onclick="closePopupBox()">&times;</span>
+      </div>
+
+      <div class="nxtPage-content2"> 
+          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
+          <span style="margin-top:4px" id="NonvegCrust">Pan</span>
+          <span class="change-prevPage2">Change</span>
+      </div>
+
+
+     <hr style="margin-top:200px;border: 1px solid gray;width: 550px;" />
+<div>
+     <span style="margin-left:35px;font-weight: bold;color: black;">Extra Cheese Topping</span>
+
+     <div class="extraItem">
+       <div class="veg-Box" style="transform:translateX(20px);"></div>
+       <div class="veg-Dot" style="transform:translate(21px,21px);"></div>
+       <span style="margin-left:50px">Cheese</span>
+
+       <div style="position: absolute;right: 20px;">
+         <i class="fa-solid fa-plus" style="font-size:14px"></i>
+         <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+         <span style="font-size:16px">65</span>
+         <input type="checkbox" name="checkboxItem" class ="selectveg" data-rate="65" onclick="addRate()" />
+       </div>
+     </div>
+</div>
+
+<div>
+     <span style="position:absolute;top: 50%;left: 6%;color: black;font-weight: bold;">Add More Veg Toppings Personal (0/2)</span>
+    <div class="selectMore">
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,12px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Black Olives</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,42px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Capsicum</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,72px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Mushroom</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()"/>
+          </div>
+      </div>
+
+
+      <div style="display:flex;flex-direction: row;align-items: center;">
+         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
+         <div class="veg-Dot" style="transform:translate(13px,102px);"></div>
+         <span style="margin-left:50px;margin-top:10px">Onion</span>
+
+          <div style="position: absolute;right: 20px;">
+              <i class="fa-solid fa-plus" style="font-size:14px"></i>
+              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
+              <span style="font-size:16px">45</span>
+              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()" />
+          </div>
+      </div>
+
+      <span style="cursor: pointer;font-weight: bold;font-size: 14px;margin-top: 20px;margin-left: 20px;">
+        <i class="fa-solid fa-plus" style="font-size:12px"></i>
+        <span>6 More</span>
+      </span>
+
+    </div>
+</div>
+
+<div class="continue-box">
+      <span class="txt-continue" id="finalShowRate2"> </span>
+      <button type="button" class="btn btn-success btn-continue" onclick="itemAddButtonveg()">Add item to cart</button>
+</div>
+</div>
+</div>
+
+
+<script>
+    let showValueveg = "Pan"; // default selected
+
+  function secondOption(option) {
+    showValueveg = option;
+  }
+
+  function displayNext() {
+    // Hide step 1
+    document.querySelector(".show-Cont").style.display = "none";
+    document.querySelector(".continue-box").style.display = "none";
+    document.querySelector(".nxt-pageBox").style.display="block";
+    document.getElementById("vegCrust").textContent = showValueveg;
+    document.getElementById('vegCrust').style.whiteSpace = 'nowrap';
+  }
+
+  function displyPrevious(){
+      document.querySelector('.show-Cont').style.display = 'block';
+      document.querySelector('.continue-box').style.display = 'block';
+      document.querySelector('.nxt-pageBox').style.display = 'none';
+    }
+
+    function displayNextSec() {
+      document.getElementById('finalShowRate2').textContent = rateCalculate || "No rate selected";
+      document.querySelector('.nxt-pageBox').style.visibility = "hidden";
+      document.querySelector('.continue-box').style.display = 'none';
+      document.querySelector('.finalBox2').classList.add('finalDisplayveg');
+
+    }
+
+    function itemAddButtonveg() {
+        alert('Item added succesfully');
+        document.querySelector('.finalBox2').classList.remove('finalDisplayveg');
+        document.querySelector('.inner-container').classList.remove('blurred');
+
+        document.querySelector('.add-btn2').classList.add('hide-Btnveg');
+        document.querySelector('.itemToCartveg1').classList.add('view-Btnveg');
+    }
+    function addRate() {
+        let extraItem = 0;
+
+        document.querySelectorAll('.selectveg').forEach((checkbox) => {
+        if (checkbox.checked) {
+            extraItem += parseInt(checkbox.getAttribute('data-rate')); // always number
+        }
+    });
+
+        let total = rateCalculate + extraItem;
+
+        document.getElementById('finalShowRate2').textContent = total;
+}
+  </script>
+
+
+
+     </div>
+
+        <div class="display-Location" id="myLocation">
+        <button onclick="SidebarLocation_close()" class="Signin-bar-item" style="width:0px;height:0px;">&times;</button>
+
+        <div id="sidebarContent">
+          <input type="search" name="SearchLocation" id="findMy-location" placeholder="Search for area, street name..." />
+
+          <div class="current-Location">
+            <i class="fa-solid fa-location-crosshairs" style="font-size:25px;color: gray;"></i>
+            <div style="display:flex;flex-direction: column;justify-content: center;align-items: center;margin-left: 20px;">
+            <span class="location-span">Get current location</span>
+            <span style="margin-right:80px">Using GPS</span>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      </nav>
+
+      <script>
+        function SidebarLocation_open(){
+          document.getElementById("myLocation").style.display = "block"; 
+          document.querySelector(".inner-container").classList.add("blurred");
+        }
+        function SidebarLocation_close(){
+          document.getElementById('myLocation').style.display = "none";
+          document.querySelector(".inner-container").classList.remove("blurred");
+        }
+      </script>
+
+      <div class="container inner-container">
+
+        <div class="restaurant-menu">
+          <span class="link"><a href="">Home /</a></span>
+          <span class="link"><a href="">Chennai / </a></span>
+          <span class="link"><a href="" style="color: black;">Pizza Hut</a></span>
+        </div>
+
+        <div class="name-restaurant">
+          <h5>Pizza Hut</h5>
+        </div>
+
+        <div class="hotel-details">
+          <div class="hotel_info">
+            <div class="inside-text">
+
+              <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                <i class="fa-solid fa-circle" style="color: green;font-size: 25px;"></i>
+                <i class="fa-solid fa-star" style="color: white;transform: translate(-23px,0px);font-size: 18px;"></i>
+                <span>4.2(2.2K + ratings
+                  <i class="fa-solid fa-circle" style="font-size: 5px;color: gray;margin-left: 6px;"></i>
+                  <i class="fa-solid fa-indian-rupee-sign"></i> 350 for two
+                </span>
+              </div>
+
+              <div class="inside-text1">
+                <a href="">Pizzas</a>
+              </div>
+
+
+              <div class="outlet">
+                <div class="order-track">
+
+                    <i class="fa-solid fa-circle"></i>
+                    <div class="v1-line"></div>
+                    <i class="fa-solid fa-circle"></i>
+
+
+                    <div class="delivery-time">
+                      <span>30-35 mins</span>
+                    </div>
+                </div>
+
+                <div class="outlet-txt">
+                  <span>Outlet
+                  <span class="outlet-area">Guindy Kathipara Bridge
+                      <span class="caret down-symbol"></span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </nav>
+
+      
+     
+
+        <div class="deals-menu">
+          <div style="display: flex;flex-direction: row;font-size: 20px;font-weight: bold;margin-left: 20px;margin-top: 30px;">
+          <span>Deals for you</span>
+
+          <a class="left carousel-control  rightArrow " href="#SecondCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control  leftArrow" href="#SecondCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+<div id="SecondCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner"style="display:grid;flex-direction: row;">
+      <div class="item active">
+        <div class="row">
+
+      
+        <div class="deals-Groups">
+          <div class="Deals_label">
+
+            <div class="inside-deals">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Deal Of Day</span>
+            </div>
+
+              
+              <div class="deals-text">
+                <span>Item at<i class="fa-solid fa-indian-rupee-sign item-price" style="margin-left:10px"></i>189</span>
+                <span style="color:gray;">NO CODE REQUIRED</span>
+              </div>
+                
+          </div>
+          </div>
+
+          <div class="deals-Groups">
+          <div class="Deals_label">
+
+            <div class="inside-deals">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Deal Of Day</span>
+            </div>
+
+              
+              <div class="deals-text">
+                <span>20% Off Upto<i class="fa-solid fa-indian-rupee-sign item-price" style="margin-left:10px"></i>150</span>
+                <span style="color:gray;">USE SWIGGY50</span>
+              </div>
+                
+          </div>
+          </div>
+  </div>
+  </div>
+
+  <div class="item">
+  <div class="row">
+
+
+          <div class="deals-Groups">
+          <div class="Deals_label">
+
+            <div class="inside-deals">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Deal Of Day</span>
+            </div>
+
+              
+              <div class="deals-text">
+                <span>10% Off Upto<i class="fa-solid fa-indian-rupee-sign item-price" style="margin-left:10px"></i>150</span>
+                <span style="color:gray;">USE HSBCFEST</span>
+              </div>
+                
+          </div>
+          </div>
+
+          <div class="deals-Groups">
+          <div class="Deals_label">
+
+            <div class="inside-deals">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Deal Of Day</span>
+            </div>
+
+              
+              <div class="deals-text">
+                <span>Flat<i class="fa-solid fa-indian-rupee-sign item-price"style="margin-left: 10px;"></i>200 Off</span>
+                <span style="color:gray;">USE AXIS200</span>
+              </div>
+                
+          </div>
+          </div>
+
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="row">
+
+          <div class="deals-Groups">
+          <div class="Deals_label">
+
+            <div class="inside-deals">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Deal Of Day</span>
+            </div>
+
+              
+              <div class="deals-text">
+                <span>Swiggy Sixes 66% Off</span>
+                <span style="color:gray;">NO CODE REQUIRED</span>
+              </div>
+                
+          </div>
+          </div>
+
+  </div>
+  </div>
+  </div> 
+  <!-- Corousel inner -->
+  </div>
+        
     </div>
+
+
+    <div class="menu_Heading">
+      <i class="fa-solid fa-fan"></i>
+      <span>MENU</span>
+      <i class="fa-solid fa-fan"></i>
+    </div>
+
+    <div class="search-Group">
+      <input type="search" placeholder="Search For Dishes">
+      <div class="search-Icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+
+<div style="display:flex;flex-direction: row;">
+    <div class="switch">
+      <div class="inner-Switch"onclick="toggleSwitch(this)">
+        <div class="movingSwitch">
+        <div class="veg-Box">
+          <div class="veg-Dot"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="switch">
+      <div class="inner-Switch"onclick="toggleSwitch(this)">
+
+        <div class="movingSwitch">
+        <div class="veg-Box1">
+          <div class="veg-Dot1"></div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="switch">
+      <span style="font-size:12px;font-weight: bold;">Bestseller</span>
+    </div>
+</div>
+
+<hr style="border-top: 1px solid gray;" />
+
+<div class="recomend">
+  <span style="font-size:20px;font-weight:bold;">Recommended</span>
+  <span class="glyphicon glyphicon-chevron-up" style="margin-top:5px;font-size: 20px;cursor: pointer;"></span>
+</div>
+
+<div class="menuList">
+  <div class="subMenu">
+
+    <div class="menuIcon">
+        <div class="veg-Box"></div>
+          <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+
+          <div style="display:flex;flex-direction: column;margin-top: 20px;font-weight: bold;font-size: 16px;">
+              <p>Veggie Supreme</p>
+              <span><i class="fa-solid fa-indian-rupee-sign item-price"></i>379</span>
+
+              <span style="color:green;font-size: 14px;">
+                <i class="fa-solid fa-star" style="color:green;font-size: 12px;"></i>   4.7
+                <span style="color:black;">(29)</span>
+             </span>
+
+        <div style="display:flex;flex-direction: row;">
+            <div class="menu-descrip">
+                <span>Serves 1 | A supreme combination of black olives, green capsicum, mushroom, onion, spicy red paprika & juicy sweet corn with flavourful pan sauce
+                <span class="hideTxt">and 100% mozzarella cheese. (PAN Per/Med-254 Kcal/100g | TnC-258 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</span>
+                <span class="hideMore"style="cursor: pointer;font-weight: bold; " onclick="showText()">more</span>
+                </span>
+            </div>
+
+          <div>
+              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/z0c4xpovma1qtmu4tlls" alt="menu-image"class="item-img" />
+
+              <div class="add-btn2" onclick="displayContent()">
+                  <span>ADD</span>
+              </div>
+
+              <div class="itemToCartveg1">
+                  <div class="cartInsideveg1">
+                    <span style="font-size:24px;margin-left: 5px;">-</span>
+                    <span>1</span>
+                    <span style="font-size:24px">+</span>
+                  </div>
+                </div>
+
+          </div>
+    
+      </div>
+
+    </div>
+  </div>
+
+
+
+      <div class="menuIcon"style="margin-top: 20px;">
+            <div class="veg-Box"></div>
+            <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
+
+            <div style="display:flex;flex-direction: column;margin-top: 20px;font-weight: bold;font-size: 16px;">
+                <p>Tandoori Paneer</p>
+                <span><i class="fa-solid fa-indian-rupee-sign item-price"></i>319</span>
+
+                <span style="color:green;font-size: 14px;">
+                    <i class="fa-solid fa-star" style="color:green;font-size: 12px;"></i>   4.2
+                    <span style="color:black;">(45)</span>
+                </span>
+
+                <div style="display:flex;flex-direction: row;">
+            <div class="menu-descrip">
+                <span>Serves 1 | It's our signature. Spiced paneer, crunchy onions & green capsicum, spicy red paprika with delicious tandoori sauce and 100% mozzarella 
+                <span class="hideTxt1"> cheese! (PAN Per/Med-335 Kcal/100g | TnC-326 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</span>
+                <span class="hideMore1"style="cursor: pointer;font-weight: bold; " onclick="showText1()">more</span>
+                </span>
+            </div>
+
+          <div>
+              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/s5ld93rsknx0fhj6xarn" alt="menu-image"class="item-img" />
+
+              <div class="add-btn1" onclick="displayContent1()">
+                  <span>ADD</span>
+              </div>
+
+              <div class="itemToCartveg">
+                  <div class="cartInsideveg">
+                    <span style="font-size:24px;margin-left: 5px;">-</span>
+                    <span>1</span>
+                    <span style="font-size:24px">+</span>
+                  </div>
+                </div>
+
+          </div>
+    
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="menuIcon"style="margin-top: 20px;">
+            <div class="veg-Box1"></div>
+            <div style="transform: translate(5px,-3px);"><i class="fa-solid fa-caret-up" style="color:red;"></i></div>
+
+            <div style="display:flex;flex-direction: column;margin-top: 20px;font-weight: bold;font-size: 16px;">
+                <p>Murg Malai Chicken</p>
+                <span><i class="fa-solid fa-indian-rupee-sign item-price"></i>379</span>
+
+                <span style="color:green;font-size: 14px;">
+                    <i class="fa-solid fa-star" style="color:green;font-size: 12px;"></i>   4.8
+                    <span style="color:black;">(8)</span>
+                </span>
+
+                <div style="display:flex;flex-direction: row;">
+            <div class="menu-descrip">
+                <span>Serves 1 | Amazingly flavourful chicken malai tikka, herbed onion & green capsicum, spicy red paprika with flavourful pan sauce and 100% mozzarella...
+                <span class="hideTxt2">cheese (PAN Per/Med-269 Kcal/100g | TnC-299 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g | Stuff Crust Chicken Seekh Kebab Add : Per: 256 Kcal/100g | Med: 253 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</span>
+                <span class="hideMore2"style="cursor: pointer;font-weight: bold; " onclick="showText2()">more</span>
+                </span>
+            </div>
+
+          <div>
+              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/t1stinhga3alitdpr6yt " alt="non-veg"class="item-img" />
+
+                <div class="add-btn" onclick="displayContent2()">
+                    <span>ADD</span>
+                </div>
+
+                <div class="itemToCart">
+                  <div class="cartInside">
+                    <span style="font-size:24px;margin-left: 5px;">-</span>
+                    <span>1</span>
+                    <span style="font-size:24px">+</span>
+                  </div>
+                </div>
+
+          </div>
+    
+      </div>
+    </div>
+
+</div>
+
+    <div id="bottom-container">
+
+      <div style="display:flex;flex-direction: row;">
+        <img src="https://static.vecteezy.com/system/resources/previews/019/956/145/non_2x/fssai-transparent-fssai-free-free-png.png"alt = "food-license" class="imgForFood-license" />
+        <span class="License-id">License No. 12423008005687</span>
+      </div>
+
+      <hr style="width: 800px;border: 1px solid gray;" />
+
+  <div style="display:flex;flex-direction: column;margin-left: 20px;">
+        <span>Pizza Hut</span>
+        <span>(Outlet:Guindy Kathipara Bridge)</span>
+        <span style="color:gray;font-size: 14px;margin-top: 8px;">
+          <i class="fa-solid fa-location-dot"></i><span style="margin-left:4px;">Pizza Hut, No 15-16, Ground Floor, Up Town FEC, Guindy Kathipara Bridge,Viralur, Chakrapani Colony, Alandur, Chennai, Tamil Nadu 600016 </span>
+        </span>
+      </div>
+
+      <hr style="width: 800px;border: 1px solid gray;" />
+
+      <span style="display:flex;justify-content: center;align-items: center;font-weight: bold;">For better experience, download the Swiggy app now</span>
+
+      <div style="display:flex;justify-content: center;align-items: center;margin-top: 20px;gap: 20px;">
+      <button type="button" class="btn btn-default ref1 ">
+          <img src="https://logos-world.net/wp-content/uploads/2020/12/Google-Play-icon-logo.png" class="gplay-img"alt="Google-Play-icon-logo">
+
+          <span style="padding-left: 30px;font-size: 14px;">GET IT ON</span><br />
+          <span style="font-size:14px;padding-left: 33px;">Google Play</span>
+      </button>
+        
+      <button type="button" class="btn btn-default ref1 ">
+          <i class="fa-brands fa-apple  gplay-img" style="font-size: 40px;padding-left: 5px;"></i>
+
+          <span style="padding-left: 35px;font-size: 10px;">Download on the</span><br />
+          <span style="font-size:14px;padding-left: 20px;">App Store</span>
+      </button>
+      </div>
+
+  </div>
+
+    </div>   <!-- Container div -->
+
+
+    <script type="text/javascript">
+
+      function showText(){
+        document.querySelector('.hideTxt').style.display = "block";
+        document.querySelector('.hideMore').style.display = "none";
+        }
+
+        function showText1(){
+        document.querySelector('.hideTxt1').style.display = "block";
+        document.querySelector('.hideMore1').style.display = "none";
+        }
+
+        function showText2() {
+          document.querySelector('.hideTxt2').style.display = 'block';
+          document.querySelector('.hideMore2').style.display = 'none'
+        }
+
+        function displayContent() {
+            document.querySelector(".inner-container").classList.add("blurred");
+            document.querySelector(".show-Cont").classList.add("blocked");
+        }
+
+        function displayContent1(){
+            document.querySelector(".inner-container").classList.add("blurred");
+            document.querySelector(".display-cont").classList.add("showme");
+        }
+        function displayContent2(){
+            document.querySelector('.inner-container').classList.add('blurred');
+            document.querySelector('.displayContElement').classList.add('allowme');
+        }
+
+        function closePopupBox(){
+            document.querySelector('.inner-container').classList.remove('blurred');
+            document.querySelector('.show-Cont').classList.remove('blocked');
+            document.querySelector('.display-cont').classList.remove('showme');
+            document.querySelector('.displayContElement').classList.remove('allowme');
+            document.querySelector('.finalBox').classList.remove('finalDisplay');
+            document.querySelector('.finalBox1').classList.remove('finalDisplayveg')
+
+            let nextPageElements = document.getElementsByClassName('nxt-pageBox');
+            for(i=0;i<nextPageElements.length;i++){
+
+              nextPageElements[i].style.display = "none"
+
+            }
+
+            let nextPageElements1 = document.getElementsByClassName('nxt-pageBox1');
+            for(i=0;i<nextPageElements1.length;i++){
+
+              nextPageElements1[i].style.display = "none"
+
+            }
+
+            let step2 = document.getElementsByClassName('nxt-pageBox2');
+            for (let i=0; i<step2.length; i++) {
+            step2[i].style.display = "none";
+          }
+        }
+
+    </script>
+
+</div>
+
+
+    <script>
+      function toggleSwitch(element) {
+        
+          let result = element.closest('.inner-Switch'); 
+          result.classList.toggle('toggled');
+      }
+    </script>
+
+
   </body>
-  </html>
+
+</html>
