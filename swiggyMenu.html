@@ -64,6 +64,7 @@
 
               <li class="nav-clr1"><a href="#" style="font-weight: 800;">
                   <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 5px;"></span>Cart</a></li>
+                  <span class="cartCountBadge" id="cartCount">0</span>
             </ul>
           </div>
         </div>
@@ -196,7 +197,7 @@
           <div style="margin-left: 30px;margin-top: 15px;">
               <span>Personal</span>
               <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>379</span>
-              <input type="radio" name="chooseRateItem" id="round-btn" value="1" checked onclick="rateOption('Rs 379')"/>
+              <input type="radio" name="chooseRateItem" id="round-btn" value="1" checked onclick="rateOption('379')"/>
           </div>
 
 
@@ -210,7 +211,7 @@
           <div>
               <span style="position: absolute;left: 45px;">Medium</span>
               <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>639</span>
-              <input type="radio" name="chooseRateItem" id="round-btn" value="2" onclick="rateOption('Rs 639')" />
+              <input type="radio" name="chooseRateItem" id="round-btn" value="2" onclick="rateOption('639')" />
           </div>
     
         </div>
@@ -483,7 +484,7 @@
           <div style="margin-left: 30px;margin-top: 15px;">
               <span>Personal</span>
               <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>319</span>
-              <input type="radio" name="chooseRate2" id="radio-btn" value="1" checked />
+              <input type="radio" name="chooseRate2" id="radio-veg2" value="1" checked onclick="rateOptionveg('319')" />
           </div>
     
 
@@ -499,7 +500,7 @@
                       <div style="margin-left: 40px;margin-top: 15px;">
                           <span>Medium</span>
                           <span style="margin-top: 65px;margin-left: 285px;"><i class="fa-solid fa-indian-rupee-sign"></i>569</span>
-                          <input type="radio" name="chooseRate2" id="radio-btn" value="2" />
+                          <input type="radio" name="chooseRate2" id="radio-veg2" value="2" onclick="rateOptionveg('569')"/>
                       </div>
                   </div>
           </div>
@@ -512,7 +513,7 @@
 
 
 
-<div class ="finalBox1">
+<div class="finalBox1">
     <div class="insideFinalBox">
 
       <div class="finalBoxInItem">
@@ -528,7 +529,7 @@
 
       <div class="nxtPage-content2"> 
           <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
-          <span style="margin-top:4px" id="NonvegCrust">Pan</span>
+          <span style="margin-top:4px" id="">Pan</span>
           <span class="change-prevPage2">Change</span>
       </div>
 
@@ -546,7 +547,7 @@
          <i class="fa-solid fa-plus" style="font-size:14px"></i>
          <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
          <span style="font-size:16px">65</span>
-         <input type="checkbox" name="checkboxItem" class ="selectRateveg" data-rate="65" onclick="addRate()" />
+         <input type="checkbox" name="checkboxItem" class ="selectRateveg" data-rate="65" onclick="addRateveg()" />
        </div>
      </div>
 </div>
@@ -564,7 +565,7 @@
               <i class="fa-solid fa-plus" style="font-size:14px"></i>
               <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
               <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()" />
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRateveg()" />
           </div>
       </div>
 
@@ -578,7 +579,7 @@
               <i class="fa-solid fa-plus" style="font-size:14px"></i>
               <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
               <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()"/>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRateveg()"/>
           </div>
       </div>
 
@@ -592,7 +593,7 @@
               <i class="fa-solid fa-plus" style="font-size:14px"></i>
               <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
               <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()"/>
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRateveg()"/>
           </div>
       </div>
 
@@ -606,7 +607,7 @@
               <i class="fa-solid fa-plus" style="font-size:14px"></i>
               <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
               <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRate()" />
+              <input type="checkbox" name="checkboxItem" class="selectRateveg" data-rate="45" onclick="addRateveg()" />
           </div>
       </div>
 
@@ -623,25 +624,34 @@
       <button type="button" class="btn btn-success btn-continue" onclick="itemAddButtonveg()">Add item to cart</button>
 </div>
 </div>
-</div>
+
 
 
 <script>
-    let showValue = "Pan"; // default selected
+    let showoption = "Pan"; 
+
+    let vegRateCalculate = 319;
+
+    function rateOptionveg(option) {
+      vegRateCalculate = parseInt(option);
+    }
 
   function secondOption(option) {
-    showValue = option;
-  }
+    showoption = option;
+    }
 
   function displayNext1() {
     // Hide step 1
     document.querySelector(".display-cont").style.display = "none";
     document.querySelector(".continue-box").style.display = "none";
 
-    // Show step 2
+   
     document.querySelector(".nxt-pageBox1").style.display = "block";
-    document.getElementById("selectedCrustNxt").textContent = showValue;
+
+    setTimeout(() => {
+    document.getElementById("selectedCrustNxt").textContent = showoption;
     document.getElementById('selectedCrustNxt').style.whiteSpace = 'nowrap';
+  },0);
   }
 
   function changeOption(){
@@ -651,22 +661,26 @@
     }
 
     function displayNextThird() {
-      document.getElementById('finalShowRate1').textContent = rateCalculate || "No rate selected";
-      document.querySelector('.nxt-pageBox1').style.visibility = "hidden";
+      document.getElementById('finalShowRate1').textContent = vegRateCalculate || "No rate selected";
+      document.querySelector('.nxt-pageBox1').style.display = "none";
       document.querySelector('.continue-box').style.display = 'none';
-      document.querySelector('.finalBox1').classList.add('finalDisplayveg');
+      document.querySelector('.finalBox1').style.display = 'block';
 
     }
 
-    function itemAddButtonveg() {
-        alert('Item added succesfully');
-        document.querySelector('.finalBox1').classList.remove('finalDisplayveg');
-        document.querySelector('.inner-container').classList.remove('blurred');
+      function itemAddButtonveg() {
+             alert('Item added successfully');
+    
+    const box = document.querySelector('.finalBox1');
+    console.log("Final Box:", box); // confirm it's not null
 
-        document.querySelector('.add-btn1').classList.add('hide-Btnveg');
-        document.querySelector('.itemToCartveg').classList.add('view-Btnveg');
-    }
-    function addRate() {
+    box.style.setProperty('display', 'none', 'important');
+    
+    document.querySelector('.inner-container').classList.remove('blurred');
+    document.querySelector('.add-btn1').classList.add('hide-Btnveg');
+    document.querySelector('.itemToCartveg').classList.add('view-Btnveg');
+      }
+    function addRateveg() {
         let extraItem = 0;
 
         document.querySelectorAll('.selectRateveg').forEach((checkbox) => {
@@ -675,306 +689,11 @@
         }
     });
 
-        let total = rateCalculate + extraItem;
+        let total = vegRateCalculate + extraItem;
 
         document.getElementById('finalShowRate1').textContent = total;
 }
   </script>
-
-
-
-  
-<div class="show-Cont">
-  <div class="popup-box">
-    <div class="box-txt">
-        <span>veggie Supreme . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
-         <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 </span>
-        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
-    </div>
-
-    <div class="round-cls">
-      <span class="close-btn" onclick="closePopupBox()">&times;</span>
-    </div>
-
-    <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
-
-    <div class="box-txt1">  
-      <span>Choose Your Crust</span>
-
-
-    <div class="category-item">
-
-    
-    <div class="inside-category">
-      <div class="veg-Box"></div>
-      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
-
-          <span style="margin-left:40px;font-size:16px">Pan</span>
-     
-          <input type="radio" name="select1"id = "radio-btn"value="1"checked onclick="selectOption('Pan')">
-
-    </div>
-
-
-<div class="inside-category1">
-    <div class="veg-Box"></div>
-      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
-
-      <span style="margin-left:40px">Stuffed Crust - Maxx</span>
-      <input type="radio" name="select1"id = "radio-btn" value="2" onclick="selectOption('Stuffed Crust - Maxx')">
-</div>
-
-<div class="inside-category2">
-    <div class="veg-Box"></div>
-      <div class="veg-Dot" style="transform: translate(2px,-3px);"></div>
-
-      <span style="margin-left:40px">Thin n Crispy</span>
-      <input type="radio" name="select1"id = "radio-btn"value="3" onclick="selectOption('Thin n Crispy')">
-</div>
-
-</div>
-
-</div>
-
-    <div class="continue-box">
-        <span class="txt-continue">Step 1/2</span>
-        <button type="button" class="btn btn-success btn-continue" onclick="displayNext()">Continue</button>
-    </div>
-
-</div>
-</div>
-
-
-
-
-<div class="nxt-pageBox" style="display:block;">
-      <div style="display:flex;flex-direction: column;margin-left: 15px;margin-top: 10px;font-weight: bold;color: black;">
-          <span>veggie Supreme . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
-          <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 </span>
-          <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
-      </div>
-
-      <div class="round-cls">
-      <span class="close-btn" onclick="closePopupBox()">&times;</span>
-    </div>
-
-      <div class="nxtPage-content"> 
-          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
-            <span style="margin-top:4px" id="vegCrust">Pan</span>
-            <span class="change-prevPage" onclick="displyPrevious()">Change</span>
-      </div>
-
-
-     <hr style="margin-top:80px;border: 1px solid gray;width: 550px;" />
-
-      <span style="position:absolute;top: 38%;left: 4%;font-weight: bold;color: black;">Choose Size</span>
-
-      <div class="size-box" style="display: flex;flex-direction: row;">
-          <div style="margin-top: 20px;margin-left: 8px;">
-              <div class="veg-Box"></div>
-              <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
-          </div>
-
-          <div style="margin-left: 30px;margin-top: 15px;">
-              <span>Personal</span>
-              <span style="position: absolute;right: 25%;margin-top: 5px;"><i class="fa-solid fa-indian-rupee-sign"></i>379</span>
-              <input type="radio" name="chooseRate1" id="radio-btn1" value="1" checked />
-          </div>
-    
-
-
-
-          <div style="position:absolute;top: 40%;">
-
-                  <div style="margin-top: 20px;margin-left: 8px;">
-                     <div class="veg-Box"></div>
-                        <div class="veg-Dot" style="transform: translate(2px,-3px);margin-top: 20px;margin-left: 8px;"></div>
-                      </div>
-
-                      <div style="margin-left: 40px;margin-top: 15px;">
-                          <span>Medium</span>
-                          <span style="margin-top: 65px;margin-left: 285px;"><i class="fa-solid fa-indian-rupee-sign"></i>639</span>
-                          <input type="radio" name="chooseRate1" id="radio-btn1" value="2" />
-                      </div>
-                  </div>
-          </div>
-
-           <div class="continue-box">
-                     <span class="txt-continue">Step 2/2</span>
-                      <button type="button" class="btn btn-success btn-continue" onclick="displayNextSec()">Continue</button>
-                  </div>
-      </div>
-  
-
-
-<div class ="finalBox2">
-    <div class="insideFinalBox">
-
-      <div class="finalBoxInItem">
-        <span>Murg Malai Chicken . <i class="fa-solid fa-indian-rupee-sign item-price"></i> 379 -
-            <i class="fa-solid fa-indian-rupee-sign item-price"></i> 849 
-        </span>
-        <span style="font-size:18px;margin-top:8px;">Customise as per your taste</span>
-      </div>
-
-      <div class="round-cls">
-          <span class="close-btn" onclick="closePopupBox()">&times;</span>
-      </div>
-
-      <div class="nxtPage-content2"> 
-          <i class="fa-regular fa-circle" style="font-size:6px;margin-left:5px;font-weight: bold;margin-top: 10px;color: black;"></i>
-          <span style="margin-top:4px" id="NonvegCrust">Pan</span>
-          <span class="change-prevPage2">Change</span>
-      </div>
-
-
-     <hr style="margin-top:200px;border: 1px solid gray;width: 550px;" />
-<div>
-     <span style="margin-left:35px;font-weight: bold;color: black;">Extra Cheese Topping</span>
-
-     <div class="extraItem">
-       <div class="veg-Box" style="transform:translateX(20px);"></div>
-       <div class="veg-Dot" style="transform:translate(21px,21px);"></div>
-       <span style="margin-left:50px">Cheese</span>
-
-       <div style="position: absolute;right: 20px;">
-         <i class="fa-solid fa-plus" style="font-size:14px"></i>
-         <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
-         <span style="font-size:16px">65</span>
-         <input type="checkbox" name="checkboxItem" class ="selectveg" data-rate="65" onclick="addRate()" />
-       </div>
-     </div>
-</div>
-
-<div>
-     <span style="position:absolute;top: 50%;left: 6%;color: black;font-weight: bold;">Add More Veg Toppings Personal (0/2)</span>
-    <div class="selectMore">
-
-      <div style="display:flex;flex-direction: row;align-items: center;">
-         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
-         <div class="veg-Dot" style="transform:translate(13px,12px);"></div>
-         <span style="margin-left:50px;margin-top:10px">Black Olives</span>
-
-          <div style="position: absolute;right: 20px;">
-              <i class="fa-solid fa-plus" style="font-size:14px"></i>
-              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
-              <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()" />
-          </div>
-      </div>
-
-
-      <div style="display:flex;flex-direction: row;align-items: center;">
-         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
-         <div class="veg-Dot" style="transform:translate(13px,42px);"></div>
-         <span style="margin-left:50px;margin-top:10px">Capsicum</span>
-
-          <div style="position: absolute;right: 20px;">
-              <i class="fa-solid fa-plus" style="font-size:14px"></i>
-              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
-              <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()"/>
-          </div>
-      </div>
-
-
-      <div style="display:flex;flex-direction: row;align-items: center;">
-         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
-         <div class="veg-Dot" style="transform:translate(13px,72px);"></div>
-         <span style="margin-left:50px;margin-top:10px">Mushroom</span>
-
-          <div style="position: absolute;right: 20px;">
-              <i class="fa-solid fa-plus" style="font-size:14px"></i>
-              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
-              <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()"/>
-          </div>
-      </div>
-
-
-      <div style="display:flex;flex-direction: row;align-items: center;">
-         <div class="veg-Box" style="transform:translate(12px,5px);"></div>
-         <div class="veg-Dot" style="transform:translate(13px,102px);"></div>
-         <span style="margin-left:50px;margin-top:10px">Onion</span>
-
-          <div style="position: absolute;right: 20px;">
-              <i class="fa-solid fa-plus" style="font-size:14px"></i>
-              <i class="fa-solid fa-indian-rupee-sign" style="font-size:14px"></i>
-              <span style="font-size:16px">45</span>
-              <input type="checkbox" name="checkboxItem" class="selectveg" data-rate="45" onclick="addRate()" />
-          </div>
-      </div>
-
-      <span style="cursor: pointer;font-weight: bold;font-size: 14px;margin-top: 20px;margin-left: 20px;">
-        <i class="fa-solid fa-plus" style="font-size:12px"></i>
-        <span>6 More</span>
-      </span>
-
-    </div>
-</div>
-
-<div class="continue-box">
-      <span class="txt-continue" id="finalShowRate2"> </span>
-      <button type="button" class="btn btn-success btn-continue" onclick="itemAddButtonveg()">Add item to cart</button>
-</div>
-</div>
-</div>
-
-
-<script>
-    let showValueveg = "Pan"; // default selected
-
-  function secondOption(option) {
-    showValueveg = option;
-  }
-
-  function displayNext() {
-    // Hide step 1
-    document.querySelector(".show-Cont").style.display = "none";
-    document.querySelector(".continue-box").style.display = "none";
-    document.querySelector(".nxt-pageBox").style.display="block";
-    document.getElementById("vegCrust").textContent = showValueveg;
-    document.getElementById('vegCrust').style.whiteSpace = 'nowrap';
-  }
-
-  function displyPrevious(){
-      document.querySelector('.show-Cont').style.display = 'block';
-      document.querySelector('.continue-box').style.display = 'block';
-      document.querySelector('.nxt-pageBox').style.display = 'none';
-    }
-
-    function displayNextSec() {
-      document.getElementById('finalShowRate2').textContent = rateCalculate || "No rate selected";
-      document.querySelector('.nxt-pageBox').style.visibility = "hidden";
-      document.querySelector('.continue-box').style.display = 'none';
-      document.querySelector('.finalBox2').classList.add('finalDisplayveg');
-
-    }
-
-    function itemAddButtonveg() {
-        alert('Item added succesfully');
-        document.querySelector('.finalBox2').classList.remove('finalDisplayveg');
-        document.querySelector('.inner-container').classList.remove('blurred');
-
-        document.querySelector('.add-btn2').classList.add('hide-Btnveg');
-        document.querySelector('.itemToCartveg1').classList.add('view-Btnveg');
-    }
-    function addRate() {
-        let extraItem = 0;
-
-        document.querySelectorAll('.selectveg').forEach((checkbox) => {
-        if (checkbox.checked) {
-            extraItem += parseInt(checkbox.getAttribute('data-rate')); // always number
-        }
-    });
-
-        let total = rateCalculate + extraItem;
-
-        document.getElementById('finalShowRate2').textContent = total;
-}
-  </script>
-
-
 
      </div>
 
@@ -1295,9 +1014,9 @@
 
               <div class="itemToCartveg">
                   <div class="cartInsideveg">
-                    <span style="font-size:24px;margin-left: 5px;">-</span>
-                    <span>1</span>
-                    <span style="font-size:24px">+</span>
+                    <span style="font-size:24px;margin-left: 5px;" class="decrease">-</span>
+                    <span class="quantity">1</span>
+                    <span style="font-size:24px" class="increase">+</span>
                   </div>
                 </div>
 
@@ -1339,9 +1058,9 @@
 
                 <div class="itemToCart">
                   <div class="cartInside">
-                    <span style="font-size:24px;margin-left: 5px;">-</span>
-                    <span>1</span>
-                    <span style="font-size:24px">+</span>
+                    <span style="font-size:24px;margin-left: 5px;" class="decrease">-</span>
+                    <span class="quantity">1</span>
+                    <span style="font-size:24px"class="increase">+</span>
                   </div>
                 </div>
 
@@ -1413,7 +1132,7 @@
 
         function displayContent() {
             document.querySelector(".inner-container").classList.add("blurred");
-            document.querySelector(".show-Cont").classList.add("blocked");
+            document.querySelector(".show-Cont").style.display="block";
         }
 
         function displayContent1(){
@@ -1427,11 +1146,10 @@
 
         function closePopupBox(){
             document.querySelector('.inner-container').classList.remove('blurred');
-            document.querySelector('.show-Cont').classList.remove('blocked');
-            document.querySelector('.display-cont').classList.remove('showme');
-            document.querySelector('.displayContElement').classList.remove('allowme');
-            document.querySelector('.finalBox').classList.remove('finalDisplay');
-            document.querySelector('.finalBox1').classList.remove('finalDisplayveg')
+            document.querySelector('.display-cont').style.display="none";
+            document.querySelector('.displayContElement').style.display="none";
+            document.querySelector('.finalBox').classList.style.display="none";
+            document.querySelector('.finalBox1').style.display="none";
 
             let nextPageElements = document.getElementsByClassName('nxt-pageBox');
             for(i=0;i<nextPageElements.length;i++){
@@ -1452,6 +1170,27 @@
             step2[i].style.display = "none";
           }
         }
+
+        const decreaseBtn = document.querySelector('.decrease');
+const increaseBtn = document.querySelector('.increase');
+const quantitySpan = document.querySelector('.quantity');
+const cartCount = document.getElementById("cartCount");
+
+let quantity = 1;
+
+
+increaseBtn.addEventListener('click', () => {
+  quantity++;
+  quantitySpan.textContent = quantity;
+});
+
+decreaseBtn.addEventListener('click', () => {
+  if (quantity > 1) {
+    quantity--;
+    quantitySpan.textContent = quantity;
+  }
+});
+
 
     </script>
 
