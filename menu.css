@@ -1,0 +1,1084 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Playwrite+NL+Guides&display=swap');
+
+
+.restaurant-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.link a{
+    text-decoration: none;
+    font-size: 12px;
+    color: darkgray;
+}
+.link a:hover{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.name-restaurant h5{
+    font-size: 18px;
+    color: black;
+    margin-left: 30px;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.inner-container{
+    height: auto;
+    flex-direction: column;
+    width: 900px !important;
+    height: auto;
+}
+
+.hotel-details{
+    position: relative;
+    width: 900px;
+    height: 180px;
+    border-radius: 50px;
+    background:linear-gradient( rgba(248, 247, 245, 0.4) 50% , rgba(156, 166, 158,0.6) 75%);
+}
+.hotel_info{
+    position: absolute;
+    width: 850px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #9ea39f;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.inside-text{
+    position: absolute;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.inside-text1 a{
+    color: red !important;
+    font-size: 13px;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+.outlet{
+    font-size: 14px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+
+}
+.down-symbol{
+    color: red;
+    cursor: pointer;
+}
+.outlet-txt{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.outlet-area{
+    font-size: 14px;
+    color: #9ea39f;
+    margin-left: 8px;
+}
+.v1-line{
+    border-left: 2px solid darkgrey;
+    height: 40px;
+    margin-left:3px;
+}
+
+.delivery-time {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 14px;
+    color: black;
+    transform: translateY(-15px);
+}
+.order-track{
+    position: absolute !important;
+    flex-direction: column !important;
+    display: flex;
+    font-size: 8px;
+    margin-top: 8px;
+    color: darkgray;
+}
+.deals-menu{
+    display:flex;
+    flex-direction: column;
+}
+
+.rightArrow{
+    width: 0px;
+    height: 0px;
+    margin-left: 60%;
+    margin-top: 25%;
+    color: gray !important;
+}
+.leftArrow{
+    width: 0px;
+    height: 0px;
+    margin-right: 20%;
+    margin-top: 25%;
+    color: gray !important;
+}
+
+.deals-Groups{
+    font-weight: 800;
+    font-size: 15px;
+}
+.Deals_label{
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.inside-deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inside-deals i{
+    font-size: 80px !important;
+    margin-left: 15px;
+    color: orange;
+}
+.inside-deals span{
+    position: absolute;
+    top: 28px;
+    left: 30px; 
+    color: white;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    font-size: 8px;
+    text-align: center;
+    font-weight: 800;
+    padding: 8px 5px;
+    border-radius: 10px;
+    transform: rotate(-45deg);
+}
+
+.deals-text {
+    font-size: 12px;
+}
+
+.deals-text span{
+    display: flex;
+    align-items: center;
+}
+.deals-text .item-price{
+    margin-right:10px;
+}
+
+.menu_Heading{
+     display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 50px !important;
+    color: dimgray !important;
+    font-size: 16px !important;
+    letter-spacing: 6px !important;
+    font-family: "Dancing Script", serif;
+}
+.menu-btn{
+    margin-left: 870px !important;
+    border-radius: 50% !important;
+    height: 70px !important;
+    position: fixed !important;
+    width: 70px !important;
+    color: white !important;
+    background-color: black !important;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-Group input{
+    background-color: #d9d9d9;
+    width: 900px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.search-Icon{
+    position: absolute;
+    display: flex !important;
+    right: 320px !important; 
+    padding: 5px !important;
+    transform: translateY(-40px) !important;
+    cursor: pointer;
+    font-size: 20px;
+}
+.switch{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid darkgrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+}
+.inner-Switch{
+    width: 50px;
+    height: 10px;
+    background-color: dimgray;
+    opacity: 0.4;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.veg-Box{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    border: 3px ridge green;
+    transform: translateY(-5px);
+    background-color: white;
+    transition: transform 0.4s ease,background-color 0.4 ease;
+}
+.veg-Dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: green;
+    top: 3px;
+    left: 3px;
+    position: absolute;
+}
+.veg-Box1{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    border: 3px ridge red;
+    transform: translateY(-5px);
+    background-color: white;
+    transition: transform 0.4s ease;
+}
+.veg-Dot1{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: red;
+    top: 3px;
+    left: 3px;
+    position: absolute;
+}
+ .inner-Switch.toggled .movingSwitch {
+    transform: translateX(28px);
+}
+.recomend{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menuList{
+    display: flex;
+    flex-direction: row;
+}
+.subMenu{
+    display: flex;
+    flex-direction: column;
+}
+.menuIcon{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+}
+.menu-descrip{
+    width: 650px;
+    height: auto;
+    font-size: 14px;
+    word-spacing: 4px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.item-img{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+}
+.add-btn{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+}
+.add-btn span{
+    position: absolute;
+    left: 40px;
+    font-size: 18px;
+    top: 6px;
+    color: green;
+    font-weight: bold;
+}
+.add-btn1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+}
+.add-btn1 span{
+    position: absolute;
+    left: 40px;
+    font-size: 18px;
+    top: 6px;
+    color: green;
+    font-weight: bold;
+}
+.add-btn2{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+}
+.add-btn2 span{
+    position: absolute;
+    left: 40px;
+    font-size: 18px;
+    top: 6px;
+    color: green;
+    font-weight: bold;
+}
+.show-Cont{
+    position: fixed;
+    display: none;
+    top: 20%;
+    z-index: 10;
+    left: 20%;
+}
+.popup-box{
+    width: 600px;
+    height: 400px;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0.6;
+    border: 1px solid black;
+    left: 100px;
+    
+}
+.box-txt{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}  
+.round-cls{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.close-btn{
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}         
+.box-txt1{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}  
+.category-item{
+    position: absolute;
+    width: 500px;
+    height: 170px;
+    background-color: white;
+    left: 20px;
+    top: 40px;
+    border-radius: 20px;
+}
+.inside-category{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#radio-btn{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+#radio-veg1{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+#radio-veg2{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+#round-btn{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+#skew-btn{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+.inside-category1{
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-category2{
+    position: absolute;
+    top: 135px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.continue-box{
+    width: 600px;
+    height: 60px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 20px 20px 50px;
+}
+.btn-continue{
+    width: 250px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: green !important;
+}
+.txt-continue{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+ .blurred {
+            filter: blur(2px);
+        }
+
+.blocked{
+    display: block;
+}
+.nxtPage-content{
+    width: 550px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left:4%;
+    top: 20%;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.change-prevPage{
+    margin-top:4px;
+    margin-left:480px;
+    color:#ff0509;
+    font-weight:bold;
+    cursor: pointer !important;
+    position: fixed;
+}
+.size-box{
+    width: 550px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    border-radius: 20px;
+}
+
+.nxt-pageBox{
+    width: 600px;
+    height: 400px;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: fixed;
+    opacity: 0.6;
+    border: 1px solid black;
+    top: 20%;
+    left: 27%;
+    display: none !important;
+    z-index: 999 !important;
+}
+.hideTxt{
+    display: none;  
+}
+.hideTxt1{
+    display: none;  
+}
+.hideTxt2{
+    display: none;  
+}
+.display-cont{
+    position: fixed;
+    display: none;
+    top: 20%;
+    z-index: 10;
+    left: 20%;
+}
+.inside-box{
+    width: 600px;
+    height: 400px;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0.6;
+    border: 1px solid black;
+    left: 100px;
+    
+}
+.textBoxIn{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}  
+.inside-Item{
+    position: absolute;
+    width: 500px;
+    height: 170px;
+    background-color: white;
+    left: 6%;
+    top: 100%;
+    border-radius: 20px;
+    z-index: 999;
+}
+.textBoxIn1{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+} 
+.inside-Menu{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-Menu1{
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-Menu2{
+    position: absolute;
+    top: 135px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.showme{
+    display: block;
+}
+.allowme{
+    display: block !important;
+}
+.finalDisplay{
+    display: block !important;
+}
+.finalDisplayveg{
+    display: block !important;
+}
+#radio-btn{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+#radio-btn1{
+    position: absolute;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+}
+.nxt-pageBox1{
+    width: 600px;
+    height: 400px;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: fixed;
+    opacity: 0.6;
+    border: 1px solid black;
+    top: 20%;
+    left: 27%;
+    display: none;
+    z-index: 999 !important;
+}
+.nxtPage-content1{
+    width: 550px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left:4%;
+    top: 20%;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.change-prevPage1{
+    margin-top:4px;
+    margin-left:480px;
+    color:#ff0509;
+    font-weight:bold;
+    cursor: pointer !important;
+    position: fixed;
+}
+.size-box1{
+    width: 550px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    border-radius: 20px;
+}
+.displayContElement{
+    position: fixed;
+    display: none;
+    top: 20%;
+    z-index: 10;
+    left: 20%;
+}
+.InsideBox-Element{
+    width: 600px;
+    height: 450px !important;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0.6;
+    border: 1px solid black;
+    left: 100px;
+    
+}
+.textBoxInItem{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}  
+.item-inside{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    background-color: white !important;
+    left: 10%;
+    top: 100%;
+    border-radius: 20px;
+    z-index: 999;
+}
+.textBoxIn2{
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+} 
+.inside-Menu01{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-Menu02{
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-Menu03{
+    position: absolute;
+    top: 135px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inside-Menu04{
+    position: absolute;
+    top: 185px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nxtPage-content2{
+    width: 550px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left:4%;
+    top: 20%;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.change-prevPage2{
+    margin-top:4px;
+    margin-left:480px;
+    color:#ff0509;
+    font-weight:bold;
+    cursor: pointer !important;
+    position: fixed;
+}
+.size-box2{
+    width: 550px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    border-radius: 20px;
+}
+
+.nxt-pageBox2{
+    width: 600px;
+    height: 400px;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: fixed;
+    opacity: 0.6;
+    border: 1px solid black;
+    top: 20%;
+    left: 27%;
+    display: none;
+    z-index: 999 !important;
+}
+#bottom-container{
+    margin-top: 50px;
+    background-color: #c9c8c7;
+}
+.imgForFood-license{
+    width: 80px;
+    height: 60px;
+}
+.License-id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ref1{
+    width: 150px;
+    height: 50px;
+    background-color: black !important;
+    color: white !important;
+    border-radius: 10px !important;
+    position: relative !important;
+}
+.gplay-img {
+    position: absolute !important;
+    height: 40px !important;
+    max-width: 50px !important;
+    width: 60% !important;
+    transform: translateX(-20px);
+}
+.display-Location{
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-left: 1px solid #ddd;
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 36px;
+    padding-left: 6%;
+}
+.Signin-bar-item {
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    background-color: transparent;
+}
+#findMy-location{
+    width: 350px;
+    padding: 15px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px;
+}
+.current-Location{
+    width: 350px;
+    padding: 25px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.location-span{
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.location-span:hover{
+    color: orange;
+}
+.finalBox{
+    position: fixed;
+    display: none;
+    top: 5%;
+    z-index: 999;
+    left: 20%;
+}
+.finalBox1{
+    position: fixed;
+    display: none;
+    top: 5%;
+    z-index: 999;
+    left: 20%;
+}
+.finalBox2{
+    position: fixed;
+    display: none;
+    top: 5%;
+    z-index: 999;
+    left: 20%;
+}
+.insideFinalBox{
+    width: 600px;
+    height: 650px !important;
+    background-color: #c9c8c7;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0.6;
+    border: 1px solid black;
+    left: 100px;
+}
+.finalBoxInItem{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}  
+.extraItem{
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 17px;
+    align-items: center;
+}
+.selectRate{
+   width: 23px;
+    height: 18px;
+    margin-top: 10px;
+}
+.selectRateveg{
+   width: 23px;
+    height: 18px;
+    margin-top: 10px;
+}
+.selectMore{
+    width: 550px;
+    height: 170px;
+    position: absolute;
+    right: 17px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    bottom: 20%;
+}
+.itemToCart{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+    display: none;
+}
+.itemToCart .cartInside{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+.hide-Btn{
+    display: none;
+}
+.view-Btn{
+    display: block;
+}
+.itemToCartveg{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+    display: none;
+}
+.itemToCartveg .cartInsideveg{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+.hide-Btnveg{
+    display: none;
+}
+.view-Btnveg{
+    display: block;
+}
+.itemToCartveg1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid green;
+    right: 45px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: white;
+    display: none;
+}
+.itemToCartveg1 .cartInsideveg1{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+.hide-Btnveg1{
+    display: none;
+}
+.view-Btnveg1{
+    display: block;
+}
+.cartCountBadge {
+      position: absolute;
+      top: 4px;
+      right: 55px;
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      display: none;
+    }
